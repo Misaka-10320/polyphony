@@ -1,0 +1,68 @@
+{
+  "images": {
+    "seoul": {
+      "file": "seoul-yongsan-police-station-news1.jpg",
+      "width": 1200,
+      "height": 683,
+      "caption": "首尔龙山警察署标识。该署调查一名在韩日本女性网红的死亡经过。",
+      "date": "报道资料图 · 拍摄日期未注明",
+      "credit": "NEWS1 / Korea JoongAng Daily",
+      "source": "https://www.koreajoongangdaily.com/korea/japanese-influencer-dies-by-apparent-suicide-while-livestreaming-in-seoul/12810816"
+    },
+    "nakamori": {
+      "file": "nakamori-press-conference-19891231.jpg",
+      "width": 1240,
+      "height": 827,
+      "caption": "1989 年 12 月 31 日，中森明菜与近藤真彦在金屏风前出席记者会。",
+      "date": "历史照片 · 1989.12.31",
+      "credit": "週刊女性PRIME / 主婦と生活社",
+      "source": "https://www.jprime.jp/articles/photo/19368"
+    },
+    "qingyang": {
+      "file": "qingyang-memorial-20180626.jpg",
+      "width": 450,
+      "height": 253,
+      "caption": "2018 年 6 月 26 日，庆阳市民献上花束与烛光，悼念逝去的年轻生命。",
+      "date": "现场照片 · 2018.06.26",
+      "credit": "华西都市报—封面新闻 / 中新网",
+      "source": "https://www.chinanews.com/sh/2018/06-27/8547925.shtml"
+    }
+  },
+  "reports": [
+    {
+      "date": "2026.08.05 · 韩国 / 英文",
+      "source": "Korea JoongAng Daily",
+      "title": "警方调查在韩日本女性网红死亡事件",
+      "description": "报道引述警方，确认一名二十多岁的日本女性在首尔住所死亡，警方正调查经过。报道未公开网名，也未确认文中关于饭圈冲突和具体责任人的完整叙述。",
+      "url": "https://www.koreajoongangdaily.com/korea/japanese-influencer-dies-by-apparent-suicide-while-livestreaming-in-seoul/12810816"
+    },
+    {
+      "date": "2026.08.05 · 韩国 / 韩文",
+      "source": "한국경제",
+      "title": "韩文报道中的警方信息",
+      "description": "以匿名 A 某称呼当事人，报道其日本国籍、网红身份与警方调查进展。可与英文报道对照阅读。",
+      "url": "https://www.hankyung.com/article/2026080572797"
+    },
+    {
+      "date": "2020.10.13 · 日本 / 日文",
+      "source": "FRIDAY",
+      "title": "记者回顾中森明菜与金屏风记者会",
+      "description": "石川敏男回顾 1989 年的事件与同年 12 月 31 日的记者会。这是多年后的回顾报道，阅读时应区分现场事实、回忆与评价。",
+      "url": "https://friday.kodansha.co.jp/article/140191"
+    },
+    {
+      "date": "2018.06.27 · 中国 / 中文",
+      "source": "华西都市报—封面新闻 / 中新网",
+      "title": "庆阳事件：悼念与家属讲述",
+      "description": "报道市民献花悼念、家属回忆及围观者起哄情况。家属讲述与当时警方处理信息分别呈现。",
+      "url": "https://www.chinanews.com/sh/2018/06-27/8547925.shtml"
+    },
+    {
+      "date": "2018.06.26 · 中国 / 中文",
+      "source": "财新",
+      "title": "庆阳事件通报与围观者处理",
+      "description": "记录 6 月 25 日通报中的调查信息，以及两名起哄者当时受到行政拘留的情况。处理进展以该报道时间为准。",
+      "url": "https://china.caixin.com/2018-06-26/101284345.html"
+    }
+  ]
+}

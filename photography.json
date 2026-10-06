@@ -1,0 +1,137 @@
+[
+  {
+    "group": "上海",
+    "slug": "shanghai",
+    "title": "街巷之间",
+    "file": "assets/photography/shanghai-1.webp",
+    "thumb": "assets/photography/shanghai-1-small.webp",
+    "width": 2200,
+    "height": 1473
+  },
+  {
+    "group": "上海",
+    "slug": "shanghai",
+    "title": "入夜的天际线",
+    "file": "assets/photography/shanghai-2.webp",
+    "thumb": "assets/photography/shanghai-2-small.webp",
+    "width": 2200,
+    "height": 1473
+  },
+  {
+    "group": "上海",
+    "slug": "shanghai",
+    "title": "城市的剪影",
+    "file": "assets/photography/shanghai-3.webp",
+    "thumb": "assets/photography/shanghai-3-small.webp",
+    "width": 1473,
+    "height": 2200
+  },
+  {
+    "group": "扬州",
+    "slug": "yangzhou",
+    "title": "园中一隅",
+    "file": "assets/photography/yangzhou-1.webp",
+    "thumb": "assets/photography/yangzhou-1-small.webp",
+    "width": 2200,
+    "height": 1468
+  },
+  {
+    "group": "扬州",
+    "slug": "yangzhou",
+    "title": "春水与桥",
+    "file": "assets/photography/yangzhou-2.webp",
+    "thumb": "assets/photography/yangzhou-2-small.webp",
+    "width": 2200,
+    "height": 1468
+  },
+  {
+    "group": "扬州",
+    "slug": "yangzhou",
+    "title": "街灯初上",
+    "file": "assets/photography/yangzhou-3.webp",
+    "thumb": "assets/photography/yangzhou-3-small.webp",
+    "width": 2200,
+    "height": 1468
+  },
+  {
+    "group": "镇江",
+    "slug": "zhenjiang",
+    "title": "江面上的落日",
+    "file": "assets/photography/zhenjiang-1.webp",
+    "thumb": "assets/photography/zhenjiang-1-small.webp",
+    "width": 2200,
+    "height": 1468
+  },
+  {
+    "group": "镇江",
+    "slug": "zhenjiang",
+    "title": "山门",
+    "file": "assets/photography/zhenjiang-2.webp",
+    "thumb": "assets/photography/zhenjiang-2-small.webp",
+    "width": 2200,
+    "height": 1468
+  },
+  {
+    "group": "镇江",
+    "slug": "zhenjiang",
+    "title": "檐下望远",
+    "file": "assets/photography/zhenjiang-3.webp",
+    "thumb": "assets/photography/zhenjiang-3-small.webp",
+    "width": 2200,
+    "height": 1468
+  },
+  {
+    "group": "star",
+    "slug": "star",
+    "title": "深空微光",
+    "file": "assets/photography/star-1.webp",
+    "thumb": "assets/photography/star-1-small.webp",
+    "width": 2200,
+    "height": 1468
+  },
+  {
+    "group": "star",
+    "slug": "star",
+    "title": "夜色的层次",
+    "file": "assets/photography/star-2.webp",
+    "thumb": "assets/photography/star-2-small.webp",
+    "width": 2200,
+    "height": 1468
+  },
+  {
+    "group": "star",
+    "slug": "star",
+    "title": "树梢之上",
+    "file": "assets/photography/star-3.webp",
+    "thumb": "assets/photography/star-3-small.webp",
+    "width": 1468,
+    "height": 2200
+  },
+  {
+    "group": "英仙座",
+    "slug": "perseids",
+    "title": "夜空序曲",
+    "file": "assets/photography/perseids-1.webp",
+    "thumb": "assets/photography/perseids-1-small.webp",
+    "width": 2200,
+    "height": 1468
+  },
+  {
+    "group": "英仙座",
+    "slug": "perseids",
+    "title": "星河渐明",
+    "file": "assets/photography/perseids-2.webp",
+    "thumb": "assets/photography/perseids-2-small.webp",
+    "width": 2200,
+    "height": 1468
+  },
+  {
+    "group": "英仙座",
+    "slug": "perseids",
+    "title": "蓝色时刻",
+    "file": "assets/photography/perseids-3.webp",
+    "thumb": "assets/photography/perseids-3-small.webp",
+    "width": 2200,
+    "height": 1468
+  }
+]

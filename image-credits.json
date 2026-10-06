@@ -1,0 +1,35 @@
+{
+  "tokyo": {
+    "file": "assets/tokyo-sarin-1995.png",
+    "width": 1400,
+    "height": 1064,
+    "alt": "东京地铁沙林事件后，筑地站附近的消防车辆和自卫队车辆。",
+    "caption": "1995 年 3 月 20 日，东京地铁沙林事件后的应急处置。图为筑地站附近的自卫队及消防车辆，截自当时的记录影像。",
+    "credit": "日本防衛省 / Wikimedia Commons；Commons 版本裁去边框，本站未进一步修改",
+    "source": "https://commons.wikimedia.org/wiki/File:Subway_sarin_attack_1995.png",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  "chile": {
+    "file": "assets/chile-la-moneda-1973.jpg",
+    "width": 1024,
+    "height": 745,
+    "alt": "1973 年智利政变中，拉莫内达宫外升起浓烟。",
+    "caption": "1973 年 9 月 11 日，智利政变期间遭轰炸的拉莫内达宫。",
+    "credit": "智利国会图书馆 / Wikimedia Commons；采用 PBrieux 修复折痕并调整影调的版本，本站未进一步修改",
+    "source": "https://commons.wikimedia.org/wiki/File:Golpe_de_Estado_1973.jpg",
+    "license": "CC BY 3.0 CL",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/cl/"
+  },
+  "berlin": {
+    "file": "assets/berlin-wall-1989.jpg",
+    "width": 2964,
+    "height": 1964,
+    "alt": "1989 年 11 月，一名戴护目镜的市民用锤凿敲取柏林墙墙体。",
+    "caption": "1989 年 11 月，柏林墙开放后，一名市民用锤凿敲取墙体。来源未注明具体拍摄日。",
+    "credit": "Raphaël Thiémard / Wikimedia Commons；文章内图片未修改",
+    "source": "https://commons.wikimedia.org/wiki/File:Berlin_1989,_Fall_der_Mauer,_Chute_du_mur_01.jpg",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/"
+  }
+}
