@@ -21,8 +21,8 @@ polish.css 为共享视觉层，style.css 保留基础布局。静态网页无�
 - misaka10320.html#photography：上海、扬州、镇江、star、英仙座，五组共十五张摄影，支持完整画面浏览
 
 ## 预览与发布
-GitHub Pages：https://misaka-10320.github.io/ 。
-Cloudflare Pages：https://polyphony-journal.pages.dev/ 。
+正式网址：https://misaka-10320.github.io/polyphony/ 。
+旧 Cloudflare 地址（停止维护）：https://polyphony-journal.pages.dev/ 。
 网站不需要构建步骤，发布时上传此文件夹的网页及资源即可。
 未来新增文章时，增加文章 HTML 并更新对应作者目录。
 
