@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="900" height="720" preserveAspectRatio="xMinYMin meet" viewBox="0 0 900 720" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="900" height="720"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-720)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="900" height="720" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,96%); fill-rule: evenodd;"/>
+			<text x="55" y="653" style="font-family: Helvetica-Bold; font-size: 33px;fill: rgb(11%,11%,12%); stroke:none;" transform="translate(0,1306) scale(1,-1)">How respondents see marriage</text>
+			<text x="55" y="613" style="font-family: Helvetica; font-size: 20px;fill: rgb(43%,43%,45%); stroke:none;" transform="translate(0,1226) scale(1,-1)">Selected responses - Share of respondents (%)</text>
+			<g transform="">
+				<g transform="">
+					<rect x="385.0" y="207.5" width="242.433" height="45.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,44%,89%); fill-rule: evenodd;"/>
+					<rect x="385.0" y="297.5" width="305.81549999999993" height="45.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,44%,89%); fill-rule: evenodd;"/>
+					<rect x="385.0" y="387.5" width="341.61749999999995" height="45.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,44%,89%); fill-rule: evenodd;"/>
+					<rect x="385.0" y="477.5" width="358.182" height="45.0" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,44%,89%); fill-rule: evenodd;"/>
+					<g transform=""/>
+				</g>
+				<g transform=""/>
+				<g transform="">
+					<g transform="">
+						<path d="M 385,185 L 790,185 Z" style="stroke: rgb(78%,80%,83%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<path d="M 385,185 L 385,181 Z" style="stroke: rgb(78%,80%,83%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 486.25,185 L 486.25,181 Z" style="stroke: rgb(78%,80%,83%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 587.5,185 L 587.5,181 Z" style="stroke: rgb(78%,80%,83%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 688.75,185 L 688.75,181 Z" style="stroke: rgb(78%,80%,83%); stroke-linecap: butt; stroke-width: 1;"/>
+						<path d="M 790,185 L 790,181 Z" style="stroke: rgb(78%,80%,83%); stroke-linecap: butt; stroke-width: 1;"/>
+					</g>
+					<g transform="">
+						<g transform=" matrix(1,0,0,1,385,180)">
+							<text x="-4.726000000000001" y="-17.0" style="font-family: Helvetica; font-size: 17px;fill: rgb(43%,43%,45%); stroke:none;" transform="translate(0,-34) scale(1,-1)">0</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,486.25,180)">
+							<text x="-9.452000000000002" y="-17.0" style="font-family: Helvetica; font-size: 17px;fill: rgb(43%,43%,45%); stroke:none;" transform="translate(0,-34) scale(1,-1)">25</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,587.5,180)">
+							<text x="-9.452000000000002" y="-17.0" style="font-family: Helvetica; font-size: 17px;fill: rgb(43%,43%,45%); stroke:none;" transform="translate(0,-34) scale(1,-1)">50</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,688.75,180)">
+							<text x="-9.452000000000002" y="-17.0" style="font-family: Helvetica; font-size: 17px;fill: rgb(43%,43%,45%); stroke:none;" transform="translate(0,-34) scale(1,-1)">75</text>
+						</g>
+						<g transform=" matrix(1,0,0,1,790,180)">
+							<text x="-14.177999999999999" y="-17.0" style="font-family: Helvetica; font-size: 17px;fill: rgb(43%,43%,45%); stroke:none;" transform="translate(0,-34) scale(1,-1)">100</text>
+						</g>
+					</g>
+				</g>
+			</g>
+			<text x="122.97999999999999" y="247.0" style="font-family: Helvetica; font-size: 20px;fill: rgb(43%,43%,45%); stroke:none;" transform="translate(0,494) scale(1,-1)">Would change appearance</text>
+			<text x="107.47999999999999" y="223.0" style="font-family: Helvetica; font-size: 20px;fill: rgb(43%,43%,45%); stroke:none;" transform="translate(0,446) scale(1,-1)">or temperament for marriage</text>
+			<text x="169.7" y="199.0" style="font-family: Helvetica; font-size: 20px;fill: rgb(43%,43%,45%); stroke:none;" transform="translate(0,398) scale(1,-1)">or social expectations</text>
+			<text x="637.433" y="223.0" style="font-family: Helvetica-Bold; font-size: 20px;fill: rgb(11%,11%,12%); stroke:none;" transform="translate(0,446) scale(1,-1)">59.86%</text>
+			<text x="254.2" y="325.0" style="font-family: Helvetica; font-size: 20px;fill: rgb(43%,43%,45%); stroke:none;" transform="translate(0,650) scale(1,-1)">Marriage for</text>
+			<text x="203.06" y="301.0" style="font-family: Helvetica; font-size: 20px;fill: rgb(43%,43%,45%); stroke:none;" transform="translate(0,602) scale(1,-1)">enjoying marriage</text>
+			<text x="700.8155" y="313.0" style="font-family: Helvetica-Bold; font-size: 20px;fill: rgb(11%,11%,12%); stroke:none;" transform="translate(0,626) scale(1,-1)">75.51%</text>
+			<text x="223.08" y="415.0" style="font-family: Helvetica; font-size: 20px;fill: rgb(43%,43%,45%); stroke:none;" transform="translate(0,830) scale(1,-1)">Own will guides</text>
+			<text x="201.94" y="391.0" style="font-family: Helvetica; font-size: 20px;fill: rgb(43%,43%,45%); stroke:none;" transform="translate(0,782) scale(1,-1)">love and marriage</text>
+			<text x="736.6175000000001" y="403.0" style="font-family: Helvetica-Bold; font-size: 20px;fill: rgb(11%,11%,12%); stroke:none;" transform="translate(0,806) scale(1,-1)">84.35%</text>
+			<text x="183.02" y="505.0" style="font-family: Helvetica; font-size: 20px;fill: rgb(43%,43%,45%); stroke:none;" transform="translate(0,1010) scale(1,-1)">Little or no influence</text>
+			<text x="176.38" y="481.0" style="font-family: Helvetica; font-size: 20px;fill: rgb(43%,43%,45%); stroke:none;" transform="translate(0,962) scale(1,-1)">from traditional ideas</text>
+			<text x="753.182" y="493.0" style="font-family: Helvetica-Bold; font-size: 20px;fill: rgb(11%,11%,12%); stroke:none;" transform="translate(0,986) scale(1,-1)">88.44%</text>
+			<text x="55" y="100" style="font-family: Helvetica; font-size: 18px;fill: rgb(43%,43%,45%); stroke:none;" transform="translate(0,200) scale(1,-1)">Different survey items; percentages are not additive.</text>
+			<text x="55" y="55" style="font-family: Helvetica; font-size: 15px;fill: rgb(43%,43%,45%); stroke:none;" transform="translate(0,110) scale(1,-1)">Source: original paper, p. 184. Chart prepared for Polyphony.</text>
+		</g>
+	</g>
+</svg>

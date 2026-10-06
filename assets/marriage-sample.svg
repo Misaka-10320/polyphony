@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg
+  PUBLIC '-//W3C//DTD SVG 1.0//EN'
+  'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'>
+<svg width="900" height="660" preserveAspectRatio="xMinYMin meet" viewBox="0 0 900 660" xmlns="http://www.w3.org/2000/svg" version="1.0" fill-rule="evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>...</title>
+	<desc>...</desc>
+	<clipPath id="clip">
+		<rect x="0" y="0" width="900" height="660"/>
+	</clipPath>
+	<g id="group" transform="scale(1,-1) translate(0,-660)" style="clip-path: url(#clip)">
+		<g transform="">
+			<rect x="0" y="0" width="900" height="660" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,96%); fill-rule: evenodd;"/>
+			<text x="55" y="592" style="font-family: Helvetica-Bold; font-size: 34px;fill: rgb(11%,11%,12%); stroke:none;" transform="translate(0,1184) scale(1,-1)">Who took part?</text>
+			<text x="55" y="552" style="font-family: Helvetica; font-size: 20px;fill: rgb(43%,43%,45%); stroke:none;" transform="translate(0,1104) scale(1,-1)">Questionnaire sample - Gansu - n = 147</text>
+			<g transform="">
+				<path d="M 232.5,352.5 L 232.5,520 A 167.5,167.5 0 0 0 329.792029,216.152976 L 232.5,352.5 Z" style="font-family: Times-Roman; font-size: 10px; stroke: rgb(96%,96%,96%); stroke-linecap: round; stroke-width: 4; fill: rgb(68%,71%,77%); fill-rule: evenodd;"/>
+				<path d="M 232.5,352.5 L 329.792029,216.152976 A 167.5,167.5 0 1 0 232.5,520 L 232.5,352.5 Z" style="font-family: Times-Roman; font-size: 10px; stroke: rgb(96%,96%,96%); stroke-linecap: round; stroke-width: 4; fill: rgb(0%,44%,89%); fill-rule: evenodd;"/>
+			</g>
+			<circle cx="232.5" cy="352.5" r="110" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(96%,96%,96%); fill-rule: evenodd;"/>
+			<text x="184.962" y="355" style="font-family: Helvetica-Bold; font-size: 57px;fill: rgb(11%,11%,12%); stroke:none;" transform="translate(0,710) scale(1,-1)">147</text>
+			<text x="180.2215" y="320" style="font-family: Helvetica; font-size: 19px;fill: rgb(43%,43%,45%); stroke:none;" transform="translate(0,640) scale(1,-1)">respondents</text>
+			<text x="505" y="431" style="font-family: Helvetica-Bold; font-size: 42px;fill: rgb(11%,11%,12%); stroke:none;" transform="translate(0,862) scale(1,-1)">59</text>
+			<text x="630" y="440" style="font-family: Helvetica; font-size: 24px;fill: rgb(11%,11%,12%); stroke:none;" transform="translate(0,880) scale(1,-1)">Male</text>
+			<text x="630" y="407" style="font-family: Helvetica; font-size: 22px;fill: rgb(43%,43%,45%); stroke:none;" transform="translate(0,814) scale(1,-1)">40.14%</text>
+			<text x="505" y="312" style="font-family: Helvetica-Bold; font-size: 42px;fill: rgb(0%,44%,89%); stroke:none;" transform="translate(0,624) scale(1,-1)">88</text>
+			<text x="630" y="321" style="font-family: Helvetica; font-size: 24px;fill: rgb(11%,11%,12%); stroke:none;" transform="translate(0,642) scale(1,-1)">Female</text>
+			<text x="630" y="288" style="font-family: Helvetica; font-size: 22px;fill: rgb(43%,43%,45%); stroke:none;" transform="translate(0,576) scale(1,-1)">59.86%</text>
+			<text x="55" y="169" style="font-family: Helvetica; font-size: 23px;fill: rgb(11%,11%,12%); stroke:none;" transform="translate(0,338) scale(1,-1)">Aged 16-24</text>
+			<text x="753.443" y="169" style="font-family: Helvetica-Bold; font-size: 27px;fill: rgb(0%,44%,89%); stroke:none;" transform="translate(0,338) scale(1,-1)">95.24%</text>
+			<rect x="55" y="116" width="790" height="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(87%,89%,92%); fill-rule: evenodd;"/>
+			<rect x="55" y="116" width="752.3960000000001" height="18" style="stroke: none; stroke-linecap: butt; stroke-width: 1; fill: rgb(0%,44%,89%); fill-rule: evenodd;"/>
+			<text x="55" y="57" style="font-family: Helvetica; font-size: 15px;fill: rgb(43%,43%,45%); stroke:none;" transform="translate(0,114) scale(1,-1)">Source: original paper, p. 184. Chart prepared for Polyphony.</text>
+		</g>
+	</g>
+</svg>
