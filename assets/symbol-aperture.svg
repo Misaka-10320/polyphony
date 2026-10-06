@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">复调自由设计五：光圈</title>
+  <path id="blade" d="M9 29C10 18 18 10 29 9l1.5 12.5C23 22 18 26 16 34Z" fill="#252922"/>
+  <use href="#blade" transform="rotate(90 32 32)"/>
+  <use href="#blade" transform="rotate(180 32 32)"/>
+  <use href="#blade" transform="rotate(270 32 32)"/>
+  <path d="M32 23c1.3 5.5 3.5 7.7 9 9-5.5 1.3-7.7 3.5-9 9-1.3-5.5-3.5-7.7-9-9 5.5-1.3 7.7-3.5 9-9Z" fill="#748263"/>
+</svg>

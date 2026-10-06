@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">复调自由设计一：开卷</title>
+  <path d="M31 18C24 13 16 12 7 16v32c9-4 17-3 24 2V18Z" fill="#252922"/>
+  <path d="M33 18c7-5 15-6 24-2v32c-9-4-17-3-24 2V18Z" fill="#66745d"/>
+  <path d="M13 24c4-1.4 8-1.4 12 .3M39 24.3c4-1.7 8-1.7 12-.3" fill="none" stroke="#f6f5f1" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M13 31c4-1.4 8-1.4 12 .3M39 31.3c4-1.7 8-1.7 12-.3" fill="none" stroke="#f6f5f1" stroke-width="1.7" stroke-linecap="round"/>
+</svg>

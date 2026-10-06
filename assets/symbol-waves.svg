@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">复调自由设计二：合声</title>
+  <path d="M7 19c10-8 17-4 22 7 2 4 4 8 6 12 5 11 12 15 22 7" fill="none" stroke="#252922" stroke-width="4.4" stroke-linecap="round"/>
+  <path d="M7 45c10 8 17 4 22-7 2-4 4-8 6-12 5-11 12-15 22-7" fill="none" stroke="#788668" stroke-width="4.4" stroke-linecap="round"/>
+  <path d="M32 27c.8 3.2 1.8 4.2 5 5-3.2.8-4.2 1.8-5 5-.8-3.2-1.8-4.2-5-5 3.2-.8 4.2-1.8 5-5Z" fill="#aa785c"/>
+</svg>
