@@ -9,6 +9,10 @@ polish.css 为共享视觉层，style.css 保留基础布局。静态网页无�
 进入、滚动与弹窗动效遵循系统减少动态效果设置。文章原文、图片署名与十五张摄影完整保留。
 本次版本已完成本地检查；GitHub Pages 从 main 分支根目录发布。
 
+## 视觉标识
+`assets/mark.svg` 是正式标志「叠框」：两张相交的纸页或影像画幅，中间保留四芒星，用于导航、浏览器图标和开场介绍。
+其余方案保留为网站的编辑符号：`symbol-book.svg` 用于文章入口，`symbol-waves.svg` 用于双作者板块，`symbol-quotes.svg` 用于文学内容，`symbol-monogram.svg` 用于文章结尾，`symbol-aperture.svg` 用于摄影板块。所有符号均为矢量图，作为装饰时不参与正文朗读。
+
 ## 页面
 - index.html：共同首页
 - misaka10320.html：Misaka10320，保留原有个人板块布局
