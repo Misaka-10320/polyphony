@@ -22,6 +22,8 @@ button { touch-action: manipulation; }
 .nav { height: 78px; background: rgba(246,245,241,.88); border-bottom-color: transparent; transition: background .4s, border-color .4s, box-shadow .4s; }
 .nav.is-scrolled { background: rgba(246,245,241,.93); border-bottom-color: #d4d6cb99; box-shadow: 0 6px 30px #25292204; }
 .collective-wordmark { font-size: 25px; font-weight: 650; letter-spacing: .12em; gap: 14px; }
+.brand-mark { display: block; width: 32px; height: 32px; flex: none; transition: transform .5s var(--ease); }
+.collective-wordmark:hover .brand-mark { transform: rotate(12deg) scale(1.05); }
 .collective-wordmark > span { font-size: 9px; letter-spacing: .22em; padding-left: 15px; border-left: 1px solid #c8cbbf; color: #666d5e; }
 .nav-links { gap: 29px; align-items: center; }
 .nav-links a, .nav-links button { font-size: 12px; font-weight: 500; letter-spacing: .025em; line-height: 1.7; }
@@ -311,6 +313,7 @@ a:hover .card-arrow { color: #fff; background: #626f52; border-color: transparen
   .nav { height: 66px; }
   .progress { top: 66px; }
   .collective-wordmark { font-size: 22px; gap: 7px; }
+  .brand-mark { width: 28px; height: 28px; }
   .collective-wordmark > span { font-size: 7px; letter-spacing: .1em; padding-left: 8px; }
   .nav-links { gap: 17px; }
   .nav-links a { font-size: 11px; }
@@ -444,6 +447,7 @@ a:hover .card-arrow { color: #fff; background: #626f52; border-color: transparen
 }
 @media (hover:none) {
   .journal-card:hover,.pill:hover,.author-panel:hover,.feature:hover,.research:hover,.wang-feature:hover,.essay-card:hover { transform: none; }
+  .collective-wordmark:hover .brand-mark { transform: none; }
 }
 @media (prefers-reduced-motion:reduce) {
   .hero-composition:hover .composition-city { transform: rotate(-6deg); }
