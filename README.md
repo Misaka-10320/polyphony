@@ -16,6 +16,7 @@ polish.css 为共享视觉层，style.css 保留基础布局。静态网页无�
 ## 页面
 - index.html：共同首页
 - misaka10320.html：Misaka10320，保留原有个人板块布局
+- misaka10320.html#sociology-log：社会学学习日志，按日本时间倒序排列；初始记录为 2026-10-05 至 10-07 的功能主义、标签理论和社会问题建构主义学习轨迹
 - florahals.html：花間堂 / florahals
 - shinto.html：神道世界观论文
 - marriage.html：青年婚姻研究完整英文原文及调查数据图表
@@ -29,6 +30,7 @@ polish.css 为共享视觉层，style.css 保留基础布局。静态网页无�
 旧 Cloudflare 地址（停止维护）：https://polyphony-journal.pages.dev/ 。
 网站不需要构建步骤，发布时上传此文件夹的网页及资源即可。
 未来新增文章时，增加文章 HTML 并更新对应作者目录。
+未来新增学习日志时，在 `misaka10320.html` 的 `.sociology-timeline` 开头加入一个带有 `<time datetime="YYYY-MM-DD">` 的条目，并更新 `.sociology-count` 的日期范围和记录数。每条记录区分当日问题、理解与修正；若有公开来源，附上链接。样式集中在 `sociology-log.css`。
 
 ## 来源与版权
 文章版权归各自作者所有。花間堂两篇文章依据提供的 DOCX 正文编排，第一篇省略投稿表与联系方式，第二篇增加阅读分节。
