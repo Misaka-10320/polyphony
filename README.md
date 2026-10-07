@@ -14,7 +14,7 @@ polish.css 为共享视觉层，style.css 保留基础布局。静态网页无�
 其余方案保留为网站的编辑符号：`symbol-book.svg` 用于文章入口，`symbol-waves.svg` 用于双作者板块，`symbol-quotes.svg` 用于文学内容，`symbol-monogram.svg` 用于文章结尾，`symbol-aperture.svg` 用于摄影板块。所有符号均为矢量图，作为装饰时不参与正文朗读。
 
 ## 页面
-- index.html：共同首页
+- index.html：共同首页；双作者板块排在四篇精选文章之前，作者区设有社会学学习日志入口
 - misaka10320.html：Misaka10320，保留原有个人板块布局
 - misaka10320.html#sociology-log：社会学学习日志，按日本时间倒序排列；初始记录为 2026-10-05 至 10-07 的功能主义、标签理论和社会问题建构主义学习轨迹
 - florahals.html：花間堂 / florahals

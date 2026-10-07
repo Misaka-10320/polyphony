@@ -1,4 +1,15 @@
-/* Misaka10320's study journal: one dated entry per study day, newest first. */
+/* Homepage entry and Misaka10320's dated study journal, newest first. */
+.learning-log-link { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: center; gap: 28px; margin-top: 24px; padding: 30px 35px; border: 1px solid #d9dfd2; border-radius: 17px; background: #fbfcf8; transition: transform .55s var(--ease),box-shadow .55s var(--ease),border-color .35s; }
+.learning-log-link:hover { transform: translateY(-4px); border-color: #b9c7b0; box-shadow: 0 17px 35px -28px #33442b66; }
+.learning-log-copy { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
+.learning-log-kicker { color: #738369; font-size: 9px; letter-spacing: .16em; }
+.learning-log-title { display: block; margin-top: 9px; color: #283227; font-size: clamp(25px,2.8vw,34px); font-weight: 540; line-height: 1.35; letter-spacing: -.045em; }
+.learning-log-title > span { color: #879780; }
+.learning-log-description { margin-top: 8px; color: #6b7765; font-size: 13px; line-height: 1.7; }
+.learning-log-meta { display: flex; align-items: center; gap: 25px; color: #687661; font-size: 11px; line-height: 1.8; white-space: nowrap; }
+.learning-log-arrow { display: grid; place-items: center; flex: none; width: 42px; height: 42px; border: 1px solid #cbd6c3; border-radius: 50%; color: #45563f; font-size: 19px; transition: background .35s,color .35s; }
+.learning-log-link:hover .learning-log-arrow { background: #35482f; color: #fff; }
+
 .author-misaka .hero-bottom { gap: 28px; }
 .author-actions { display: flex; align-items: center; justify-content: flex-end; gap: 23px; flex-wrap: wrap; }
 .author-actions .text-link { white-space: nowrap; font-size: 12px; color: #536348; }
@@ -56,6 +67,8 @@
 .sociology-source a:hover { text-decoration-color: currentColor; }
 
 @media (max-width: 900px) {
+  .learning-log-link { padding: 26px 28px; }
+  .learning-log-meta { gap: 13px; }
   .author-actions { gap: 14px; }
   .sociology-notes { grid-template-columns: 1fr; gap: 23px; }
   .sociology-timeline::before { left: 151px; }
@@ -66,6 +79,11 @@
   .sociology-source { margin-left: 176px; }
 }
 @media (max-width: 680px) {
+  .learning-log-link { grid-template-columns: 1fr; gap: 22px; margin-top: 20px; padding: 26px 25px; border-radius: 15px; }
+  .learning-log-title { font-size: 27px; }
+  .learning-log-description { font-size: 12px; }
+  .learning-log-meta { justify-content: space-between; padding-top: 16px; border-top: 1px solid #e1e6dc; font-size: 10px; }
+  .learning-log-arrow { width: 35px; height: 35px; font-size: 16px; }
   .author-misaka .hero-bottom { display: block; }
   .author-actions { display: grid; grid-template-columns: max-content max-content; justify-content: start; gap: 15px 25px; margin-top: 18px; }
   .author-actions .pill { grid-column: 1 / -1; margin: 0; }
@@ -100,8 +118,12 @@
   .sociology-source { margin: 31px 0 0 28px; font-size: 11px; }
 }
 @media (max-width: 370px) {
+  .learning-log-link { padding-inline: 21px; }
   .author-actions { gap: 12px; }
   .author-actions .text-link { font-size: 11px; }
   .sociology-card { padding-inline: 18px; }
   .sociology-matrix { grid-template-columns: 1fr; }
+}
+@media (hover: none), (prefers-reduced-motion: reduce) {
+  .learning-log-link:hover { transform: none; }
 }
