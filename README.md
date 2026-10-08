@@ -16,7 +16,8 @@ polish.css 为共享视觉层，style.css 保留基础布局。静态网页无�
 ## 页面
 - index.html：共同首页；双作者板块排在四篇精选文章之前，作者区设有社会学学习日志入口
 - misaka10320.html：Misaka10320，保留原有个人板块布局
-- misaka10320.html#sociology-log：社会学学习日志，按日本时间倒序排列；初始记录为 2026-10-05 至 10-07 的功能主义、标签理论和社会问题建构主义学习轨迹
+- misaka10320.html#sociology-log：社会学学习日志，按日本时间倒序排列；2026-10-05 至 10-08 共四则记录，含第一章思维导图。日志与思维导图可切换中文 / 日文，选择保存在浏览器本地。
+- misaka10320.html#chapter-one-map：第一章的网页思维导图，按功能主义、标签理论、社会问题建构主义、经验研究与儿童虐待研究案例组织。
 - florahals.html：花間堂 / florahals
 - shinto.html：神道世界观论文
 - marriage.html：青年婚姻研究完整英文原文及调查数据图表
@@ -30,7 +31,7 @@ polish.css 为共享视觉层，style.css 保留基础布局。静态网页无�
 旧 Cloudflare 地址（停止维护）：https://polyphony-journal.pages.dev/ 。
 网站不需要构建步骤，发布时上传此文件夹的网页及资源即可。
 未来新增文章时，增加文章 HTML 并更新对应作者目录。
-未来新增学习日志时，在 `misaka10320.html` 的 `.sociology-timeline` 开头加入一个带有 `<time datetime="YYYY-MM-DD">` 的条目，并更新 `.sociology-count` 的日期范围和记录数。每条记录区分当日问题、理解与修正；若有公开来源，附上链接。样式集中在 `sociology-log.css`。
+未来新增学习日志时，在 `misaka10320.html` 的 `.sociology-timeline` 开头加入一个带有 `<time datetime="YYYY-MM-DD">` 的条目，并更新 `.sociology-count` 与首页入口的日期范围、记录数。每条记录区分当日问题、理解与修正；若有公开来源，附上链接。相应的日文译文加入 `sociology-log.js`，样式集中在 `sociology-log.css`。中文正文留在 HTML 中作为无脚本回退。
 
 ## 来源与版权
 文章版权归各自作者所有。花間堂两篇文章依据提供的 DOCX 正文编排，第一篇省略投稿表与联系方式，第二篇增加阅读分节。
