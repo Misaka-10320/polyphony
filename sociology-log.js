@@ -63,26 +63,10 @@
 
     ['.sociology-map-kicker', '第1章 / マインドマップ'],
     ['#sociology-map-title', '第1章 · マインドマップ'],
-    ['.sociology-map-heading > p', '五つの枝をたどり、社会問題研究の視点の変化を振り返る。'],
+    ['.sociology-map-heading > p', '三つの理論から研究の手順へ。児童虐待の事例で、それぞれの問いを確かめる。'],
     ['.sociology-map-center span', '中心となる問い / 01'],
     ['.sociology-map-center strong', '社会問題は、<br>いかに「問題」になるのか'],
     ['.sociology-map-center p', '研究の焦点は、現象そのものから、規則、クレイム、社会的な反応へと移る。'],
-    ['.sociology-map-branch:nth-child(1) .map-number', '01 / 機能主義'],
-    ['.sociology-map-branch:nth-child(1) h4', '機能主義'],
-    ['.sociology-map-branch:nth-child(1) p', '現象は社会システムにどんな結果をもたらすか。デュルケームは犯罪が規範を明確にする可能性を論じた。「機能がある」ことは「正当である」ことではない。'],
-    ['.sociology-map-branch:nth-child(2) .map-number', '02 / ラベリング理論'],
-    ['.sociology-map-branch:nth-child(2) h4', 'ラベリング理論'],
-    ['.sociology-map-branch:nth-child(2) p', '誰が規則を作り、誰が逸脱者と認定されるのか。実際の規則違反と社会的な認定を分けると、四つの組み合わせが見える。'],
-    ['.sociology-map-branch:nth-child(3) .map-number', '03 / 構築主義'],
-    ['.sociology-map-branch:nth-child(3) h4', '社会問題の構築主義'],
-    ['.sociology-map-branch:nth-child(3) p', '誰がクレイムを申し立て、どう問題を名付け、支持を集め、反応を引き出すのか。主張の真偽の判断をいったん留保し、観察可能な相互作用を研究する。'],
-    ['.sociology-map-branch:nth-child(4) .map-number', '04 / 経験的研究'],
-    ['.sociology-map-branch:nth-child(4) h4', '経験的研究の道筋'],
-    ['.sociology-map-branch:nth-child(4) p', '定義、レトリック、制度的文脈、統計の生産と利用を追う。事実が論拠になる過程を分析すると同時に、証拠を丁寧に確かめる。'],
-    ['.sociology-map-branch:nth-child(5) .map-number', '05 / 事例研究'],
-    ['.sociology-map-branch:nth-child(5) h4', '児童虐待をめぐる研究'],
-    ['.sociology-map-branch:nth-child(5) p', '『〈児童虐待〉の構築』は、「増加・深刻化」という語りが、定義の変化、機関の置かれた状況、メディア、統計とどう結びつくかを検討する。'],
-    ['.sociology-map-note', '方法上の境界：主張がどう形成されたかを説明することは、現実の被害を否定することではない。クレイム活動の記述にも証拠が必要である。'],
 
     ['.sociology-synthesis-kicker', '三つの問い方'],
     ['#sociology-synthesis-title', '同じ現象に、<br>三つの問いを。'],
@@ -102,12 +86,16 @@
   const buttons = [...root.querySelectorAll('[data-sociology-lang]')];
   const timeline = root.querySelector('.sociology-timeline');
   const switcher = root.querySelector('.sociology-language');
+  const mapTiers = root.querySelector('.sociology-map-tiers');
+  const fourGrid = root.querySelector('.map-four-grid');
   function setLanguage(lang) {
     const japanese = lang === 'ja';
     for (const node of nodes) node.element.innerHTML = japanese ? node.japanese : node.chinese;
     root.lang = japanese ? 'ja' : 'zh-CN';
     timeline.setAttribute('aria-label', japanese ? '社会学の学習年表。新しい記録から順に表示' : '社会学学习时间轴，最新记录在前');
     switcher.setAttribute('aria-label', japanese ? '学習記録の言語切り替え' : '学习日志语言切换');
+    mapTiers.setAttribute('aria-label', japanese ? '第1章の詳しいマインドマップ' : '第一章详细思维导图');
+    fourGrid.setAttribute('aria-label', japanese ? 'ラベリング理論の四つの行動類型' : '标签理论四种行为类型');
     buttons.forEach(button => button.setAttribute('aria-pressed', String(button.dataset.sociologyLang === lang)));
     try { localStorage.setItem('polyphony-sociology-language', lang); } catch { /* Storage is optional. */ }
   }

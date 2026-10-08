@@ -70,15 +70,42 @@
 .sociology-map-center span { color: #b7cdb0; font-size: 10px; letter-spacing: .15em; }
 .sociology-map-center strong { display: block; margin-top: 11px; font-size: clamp(23px,2.7vw,33px); font-weight: 510; line-height: 1.45; letter-spacing: -.055em; }
 .sociology-map-center p { max-width: 410px; margin: 12px auto 0; color: #d0ddcb; font-size: 12px; line-height: 1.8; }
-.sociology-map-branches { position: relative; display: grid; grid-template-columns: repeat(6,minmax(0,1fr)); gap: 16px; margin: 54px 0 0; padding: 0; list-style: none; }
-.sociology-map-branches::before { content: ''; position: absolute; top: -20px; left: 16.66%; right: 16.66%; height: 1px; background: #b2c5aa; }
-.sociology-map-branch { position: relative; grid-column: span 2; min-height: 226px; padding: 26px 25px 23px; border: 1px solid #d7dfd2; border-radius: 13px; background: #fbfcf9; }
-.sociology-map-branch:nth-child(-n+3)::before { content: ''; position: absolute; left: 50%; top: -20px; width: 1px; height: 20px; background: #b2c5aa; }
-.sociology-map-branch:nth-child(n+4) { grid-column: span 3; min-height: 190px; }
-.sociology-map-branch .map-number { color: #73866c; font-size: 10px; letter-spacing: .1em; }
-.sociology-map-branch h4 { margin: 15px 0 9px; color: #2e3c2c; font-size: 19px; font-weight: 570; letter-spacing: -.035em; }
-.sociology-map-branch p { color: #5a6956; font-size: 12px; line-height: 1.85; }
-.sociology-map-note { margin: 23px 0 0; padding-left: 16px; border-left: 2px solid #819975; color: #495d45; font-size: 12px; line-height: 1.85; }
+.sociology-map-tiers { position: relative; margin-top: 48px; }
+.sociology-map-tiers::before { content: ''; position: absolute; top: -48px; bottom: 30px; left: 50%; width: 1px; background: #c0cdb9; pointer-events: none; }
+.sociology-map-rail { position: relative; z-index: 1; width: fit-content; margin: 0 auto 22px; padding: 8px 17px; border: 1px solid #cbd8c4; border-radius: 100px; background: #eef2e9; color: #63765d; font-size: 10px; letter-spacing: .11em; text-align: center; }
+.sociology-map-rail.map-rail-second { margin-top: 35px; }
+.sociology-map-theories,.sociology-map-lower { position: relative; z-index: 1; display: grid; gap: 15px; }
+.sociology-map-theories { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.sociology-map-lower { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.sociology-map-panel { min-width: 0; overflow: hidden; border: 1px solid #d5ddd1; border-radius: 15px; background: #fbfcf9; box-shadow: 0 13px 25px -28px #1f351d80; }
+.map-panel-head { min-height: 150px; padding: 25px 25px 20px; border-top: 3px solid var(--map-accent); border-bottom: 1px solid #e1e7dd; background: var(--map-tint); }
+.map-function { --map-accent: #6884a0; --map-tint: #f0f4f7; }
+.map-labeling { --map-accent: #b77c73; --map-tint: #f8f1ef; }
+.map-construction { --map-accent: #70916e; --map-tint: #f0f5ef; }
+.map-method { --map-accent: #7b879f; --map-tint: #f1f3f6; }
+.map-case { --map-accent: #a48b68; --map-tint: #f7f4ef; }
+.map-index { color: var(--map-accent); font-size: 9px; font-weight: 650; letter-spacing: .16em; }
+.map-panel-head h4 { margin: 10px 0 5px; color: #28352a; font-size: clamp(20px,2vw,25px); font-weight: 560; letter-spacing: -.04em; }
+.map-panel-head p { color: #566553; font-size: 12px; line-height: 1.7; }
+.map-nodes { margin: 0; padding: 8px 19px 18px 25px; list-style: none; }
+.map-nodes li { position: relative; padding: 12px 0 12px 18px; border-bottom: 1px solid #e8ece5; color: #576452; font-size: 12px; line-height: 1.7; }
+.map-nodes li:last-child { border-bottom: 0; }
+.map-nodes li::before { content: ''; position: absolute; left: 0; top: 20px; width: 6px; height: 6px; border: 1px solid var(--map-accent); border-radius: 50%; background: #fff; }
+.map-nodes b,.map-sequence b { display: block; margin-bottom: 3px; color: #2d3d2e; font-size: 12px; font-weight: 650; }
+.map-four-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 5px; margin: 0 20px 5px; }
+.map-four-grid > div { min-height: 65px; padding: 9px 10px; border-radius: 7px; background: #f6f0ed; }
+.map-four-grid small { display: block; color: #896f69; font-size: 9px; line-height: 1.5; }
+.map-four-grid strong { display: block; margin-top: 4px; color: #4b3b38; font-size: 11px; font-weight: 600; }
+.map-nodes-after { padding-top: 0; }
+.map-sequence { margin: 0; padding: 7px 23px 18px; list-style: none; }
+.map-sequence li { display: grid; grid-template-columns: 26px minmax(0,1fr); gap: 12px; padding: 12px 0; border-bottom: 1px solid #e8ece5; color: #576452; font-size: 12px; line-height: 1.7; }
+.map-sequence li:last-child { border-bottom: 0; }
+.map-step { display: grid; place-items: center; align-self: start; width: 23px; height: 23px; border: 1px solid var(--map-accent); border-radius: 50%; color: var(--map-accent); font-size: 9px; font-weight: 700; }
+.sociology-map-takeaway { position: relative; z-index: 1; margin-top: 16px; padding: 19px 22px; border: 1px solid #d0dccc; border-radius: 11px; background: #f6f9f3; color: #52674d; font-size: 12px; line-height: 1.9; }
+.sociology-map-takeaway b { display: block; color: #294129; font-size: 12px; }
+.sociology-map .map-ja { display: none; }
+.sociology-log[lang="ja"] .sociology-map .map-ja { display: initial; }
+.sociology-log[lang="ja"] .sociology-map .map-zh { display: none; }
 .sociology-synthesis { display: grid; grid-template-columns: minmax(0,.8fr) minmax(0,1.2fr); gap: 52px; margin: 62px 0 0 261px; padding: 38px 43px; border-radius: 17px; background: #283128; color: #f1f3ec; }
 .sociology-synthesis-kicker { color: #b7c8ac; font-size: 9px; letter-spacing: .18em; }
 .sociology-synthesis h3 { margin: 20px 0 0; font-size: 28px; font-weight: 480; letter-spacing: -.05em; line-height: 1.48; }
@@ -102,10 +129,8 @@
   .sociology-entry article { grid-template-columns: 125px minmax(0,1fr); gap: 51px; }
   .sociology-card { padding: 35px 32px; }
   .sociology-map { padding: 34px 30px; }
-  .sociology-map-branches { grid-template-columns: repeat(2,minmax(0,1fr)); margin-top: 34px; }
-  .sociology-map-branches::before,.sociology-map-branch::before { display: none; }
-  .sociology-map-branch,.sociology-map-branch:nth-child(n+4) { grid-column: auto; min-height: 0; }
-  .sociology-map-branch:last-child { grid-column: 1 / -1; }
+  .sociology-map-theories { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .map-construction { grid-column: 1 / -1; }
   .sociology-synthesis { margin-left: 176px; grid-template-columns: 1fr; gap: 22px; }
   .sociology-source { margin-left: 176px; }
 }
@@ -153,10 +178,13 @@
   .sociology-map-heading > p { margin-top: 10px; }
   .sociology-map-center { margin-top: 25px; padding: 24px 22px; }
   .sociology-map-center strong { font-size: 25px; }
-  .sociology-map-branches { display: block; margin-top: 26px; }
-  .sociology-map-branches::before,.sociology-map-branch::before { display: none; }
-  .sociology-map-branch { min-height: 0; margin-top: 10px; padding: 22px 21px; }
-  .sociology-map-branch h4 { font-size: 18px; }
+  .sociology-map-tiers { margin-top: 41px; }
+  .sociology-map-tiers::before { display: none; }
+  .sociology-map-theories,.sociology-map-lower { display: block; }
+  .sociology-map-panel { margin-top: 11px; }
+  .map-panel-head { min-height: 0; padding: 22px 21px 19px; }
+  .map-nodes { padding-inline: 17px; }
+  .map-sequence { padding-inline: 17px; }
   .sociology-synthesis { margin: 40px 0 0 28px; padding: 27px 25px; }
   .sociology-synthesis h3 { font-size: 25px; margin-top: 10px; }
   .sociology-source { margin: 31px 0 0 28px; font-size: 11px; }
