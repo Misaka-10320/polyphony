@@ -1,4 +1,9 @@
 'use strict';
+// Preserve links to the journal's former location in the author page.
+if (/\/misaka10320\.html$/.test(location.pathname) && /^(#sociology-log|#chapter-one-map|#study-\d{4}-\d{2}-\d{2}|#sociology-)/.test(location.hash)) {
+  location.replace('sociology-log.html'+(location.hash==='#sociology-log'?'':location.hash));
+}
+
 // Native touch scrolling stays intact; wheel easing follows the system motion preference.
 (() => {
   const reduced=matchMedia('(prefers-reduced-motion: reduce)');

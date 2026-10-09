@@ -1,6 +1,10 @@
 'use strict';
 (() => {
-  const categories = {
+  const international=document.body.dataset.glossary==='international';
+  const config=international?window.internationalGlossaryConfig:null;
+  if(international&&!config){document.querySelector('#result-count').textContent='词库界面暂未载入，请刷新页面重试。';return;}
+  const reviewKey=international?'polyphony-international-review-v1':'polyphony-sociology-review-v1';
+  const categories = config?.categories || {
     theory: {zh:'经典与现代理论',ja:'古典・現代理論'},
     interaction: {zh:'互动与社会心理',ja:'相互行為・社会心理'},
     culture: {zh:'文化与传媒',ja:'文化・メディア'},
@@ -14,7 +18,7 @@
   };
   const ui = {
     zh: {
-      skip:'跳至正文',journal:'学习日志',map:'思维导图',home:'首页 ↗',title:'社会学名词解释',subtitle:'把概念，连成理解。',begin:'开始查词 ↓',
+      skip:'跳至正文',learning:'学习',journal:'学习日志',map:'思维导图',home:'首页 ↗',title:'社会学名词解释',subtitle:'把概念，连成理解。',begin:'开始查词 ↓',
       description:'面向修士入试与日常学习的中日双语词库。<br>从一句定义出发，接上学者、例子与概念的边界。',terms:'个词条',categories:'个领域',mastered:'已掌握',
       answerKicker:'不止记住名字 / 写出解释',answerTitle:'让答案有一条完整的线。',answer1:'定义：它解释什么现象？',answer2:'学者：谁在什么论述中使用它？',answer3:'机制与例子：它怎样运作？',answer4:'区别：它不等同于哪个邻近概念？',
       answerNote:'同志社 2026 年度秋期公开题要求结合学者或著作与具体例。词条是答题提纲，篇幅与论证应按实际题目展开。',
@@ -23,7 +27,7 @@
       flashcardKicker:'RECALL / 先试着解释',reveal:'查看解释',hide:'收起解释',markMastered:'标记已掌握',unmarkMastered:'已掌握 ✓ / 撤销',next:'下一词 →',allCategories:'全部领域',all:'全部词条',saved:'已收藏',unmastered:'待复习',exam:'公开题例',save:'收藏 ☆',unsave:'已收藏 ★',mark:'标记掌握',unmark:'已掌握 ✓',permalink:'词条链接 ↗',scholar:'相关学者 / 理论脉络',example:'例子',distinction:'易混点 / 边界',related:'关联概念',source:'参考资料',searchPlaceholder:'搜索中文、日文、英文或学者',searchLabel:'搜索词条',languageLabel:'词库语言切换',navLabel:'主导航',closeLabel:'关闭抽词卡片',empty:'没有找到匹配词条。试试另一种语言、学者名，或调整筛选范围。',loading:'正在载入词库…',error:'词库暂未载入，请刷新页面重试。',count:(a,b)=>`找到 ${a} 个词条 · 已显示 ${b} 个`,sourceLink:'官方资料 ↗'
     },
     ja: {
-      skip:'本文へ',journal:'学習記録',map:'マインドマップ',home:'ホーム ↗',title:'社会学用語解説',subtitle:'概念を、理解につなぐ。',begin:'用語を探す ↓',
+      skip:'本文へ',learning:'学習',journal:'学習記録',map:'マインドマップ',home:'ホーム ↗',title:'社会学用語解説',subtitle:'概念を、理解につなぐ。',begin:'用語を探す ↓',
       description:'大学院入試と日々の学習のための中日二言語の用語集。<br>定義に研究者、具体例、概念の境界を結びつける。',terms:'用語',categories:'領域',mastered:'習得済み',
       answerKicker:'名前を覚える、その先へ',answerTitle:'説明に、一本の筋を通す。',answer1:'定義：どのような現象を説明するか。',answer2:'研究者：誰が、どの議論で用いたか。',answer3:'仕組みと例：どう働くか。',answer4:'区別：近い概念と何が違うか。',
       answerNote:'同志社大学の2026年度秋期公開問題では、研究者・著作への言及と具体例が求められた。各項目は答案の骨子であり、分量と論証は実際の設問に合わせて展開する。',
@@ -32,7 +36,8 @@
       flashcardKicker:'RECALL / まず説明してみる',reveal:'解説を見る',hide:'解説を隠す',markMastered:'習得済みにする',unmarkMastered:'習得済み ✓ / 取り消す',next:'次の用語 →',allCategories:'全領域',all:'全項目',saved:'お気に入り',unmastered:'未習得',exam:'公開出題例',save:'お気に入り ☆',unsave:'登録済み ★',mark:'習得済みにする',unmark:'習得済み ✓',permalink:'項目リンク ↗',scholar:'関連する研究者 / 理論',example:'具体例',distinction:'混同しやすい点 / 限界',related:'関連概念',source:'参考資料',searchPlaceholder:'中国語・日本語・英語・研究者名で検索',searchLabel:'用語を検索',languageLabel:'用語集の言語切り替え',navLabel:'主なナビゲーション',closeLabel:'復習カードを閉じる',empty:'該当する項目がない。別の言語や研究者名を試すか、絞り込み条件を変えてください。',loading:'用語集を読み込んでいます…',error:'用語集を読み込めませんでした。ページを再読み込みしてください。',count:(a,b)=>`${a}項目が該当 · ${b}項目を表示`,sourceLink:'公式資料 ↗'
     }
   };
-  const schoolNotes = [
+  if(config)Object.assign(ui.zh,config.ui);
+  const schoolNotes = config?.schoolNotes || [
     {name:'滋賀県立大学',url:'https://www.shc.usp.ac.jp/region/graduate-school/',zh:'地域文化学强调以多种研究方法理解日本、亚洲的地域社会与文化。可把地域、文化概念与田野调查方法一起复习。',ja:'地域文化学は多様な方法で日本・アジアの地域社会と文化を研究する。地域・文化概念をフィールドワークの方法と併せて学ぶ。'},
     {name:'同志社大学',url:'https://ss.doshisha.ac.jp/files/shajm/page/7.shakai_zenki_ryugakusei26FAL.pdf',zh:'已核对 2026 年度秋、春期外国人留学生社会学题例：理论、统计与研究方法均有出现。秋期要求定义之外结合学者或著作及具体例。',ja:'2026年度秋・春期の外国人留学生社会学問題を確認。理論、統計、研究方法の出題例がある。秋期は定義に加えて研究者・著作と具体例を求める。'},
     {name:'京都府立大学',url:'https://www.kpu.ac.jp/graduate/exam/exam/',zh:'社会科学研究科含公共政策学与福祉社会学。社会学、社会福祉、地域与人的发展可相互联系；具体选拔科目须对照当年度要项。',ja:'社会科学研究科には公共政策学・福祉社会学がある。社会学、社会福祉、地域、人間形成を関連づけて学び、受験科目は当年度の要項で確認する。'}
@@ -41,32 +46,50 @@
   const escape = value => String(value ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const normalize = value => String(value).normalize('NFKC').toLowerCase().replace(/\s+/g,' ').trim();
   const safeURL = value => /^https?:\/\//.test(value) ? escape(value) : '#';
-  const state = {lang:'zh',category:'all',status:'all',query:'',limit:24,recall:false};
-  let terms=[],sources=[],sourceMap=new Map(),termMap=new Map(),filtered=[],flashTerm=null,loadState='loading';
+  const state = {lang:'zh',category:'all',status:'all',school:'all',year:'all',evidence:'all',query:'',limit:24,recall:false};
+  let papers=[],paperMap=new Map(),terms=[],sources=[],sourceMap=new Map(),termMap=new Map(),filtered=[],flashTerm=null,loadState='loading';
   let review={saved:new Set(),mastered:new Set()};
   try {
-    state.lang=localStorage.getItem('polyphony-sociology-language')==='ja'?'ja':'zh';
-    const stored=JSON.parse(localStorage.getItem('polyphony-sociology-review-v1')||'{}');
+    state.lang=!international&&localStorage.getItem('polyphony-sociology-language')==='ja'?'ja':'zh';
+    const stored=JSON.parse(localStorage.getItem(reviewKey)||'{}');
     review={saved:new Set(Array.isArray(stored.saved)?stored.saved:[]),mastered:new Set(Array.isArray(stored.mastered)?stored.mastered:[])};
   } catch { /* The glossary also works without persistent storage. */ }
   function saveReview() {
-    try {localStorage.setItem('polyphony-sociology-review-v1',JSON.stringify({saved:[...review.saved],mastered:[...review.mastered]}));} catch { /* Optional storage. */ }
+    try {localStorage.setItem(reviewKey,JSON.stringify({saved:[...review.saved],mastered:[...review.mastered]}));} catch { /* Optional storage. */ }
+  }
+  function evidenceLabel(kind){return config?.evidenceLabels[kind]||kind;}
+  function examHistory(term){
+    if(!international)return '';
+    return `<section class="term-exam-history"><h4>考过的学校与年份 <span>${term._exams.length} 条收录记录</span></h4><ul>${term._exams.map(e=>`<li><div><b>${escape(e.school)}</b><span>${escape(e.year)} 年 · ${escape(e.courseCode||'')} ${escape(e.course)}</span></div><p>原题词名：${escape(e.questionTerm)} <span class="evidence-tag">${escape(evidenceLabel(e.evidenceKind))}</span></p><p class="exam-note">${escape(e.evidenceNote)}</p><a href="${safeURL(sourceMap.get(e.source)?.url)}" target="_blank" rel="noopener noreferrer">${escape(sourceMap.get(e.source)?.title)} ↗</a></li>`).join('')}</ul></section>`;
   }
   function fields(term) {
     const copy=ui[state.lang],lang=state.lang;
     const related=(term.related||[]).map(id=>termMap.get(id)).filter(Boolean);
-    return `<div class="term-content"><p class="term-definition">${escape(term.definition[lang])}</p><dl><dt>${copy.scholar}</dt><dd>${escape(term.scholar[lang])}</dd><dt>${copy.example}</dt><dd>${escape(term.example[lang])}</dd><dt>${copy.distinction}</dt><dd class="term-distinction">${escape(term.distinction[lang])}</dd>${related.length?`<dt>${copy.related}</dt><dd class="term-related">${related.map(t=>`<a href="#term-${escape(t.id)}" data-related="${escape(t.id)}">${escape(t[lang])}</a>`).join('')}</dd>`:''}</dl><div class="term-source-links">${(term.sources||[]).map(id=>sourceMap.get(id)).filter(Boolean).map(s=>`<a href="${safeURL(s.url)}" target="_blank" rel="noopener noreferrer">${escape(s.title)} ↗</a>`).join('')}${(term.exam||[]).map(e=>`<a href="${safeURL(e.url)}" target="_blank" rel="noopener noreferrer">${escape(e.label)} ↗</a>`).join('')}</div></div>`;
+    return `<div class="term-content"><p class="term-definition">${escape(term.definition[lang])}</p><dl><dt>${copy.scholar}</dt><dd>${escape(term.scholar[lang])}</dd><dt>${copy.example}</dt><dd>${escape(term.example[lang])}</dd><dt>${copy.distinction}</dt><dd class="term-distinction">${escape(term.distinction[lang])}</dd>${related.length?`<dt>${copy.related}</dt><dd class="term-related">${related.map(t=>`<a href="#term-${escape(t.id)}" data-related="${escape(t.id)}">${escape(t[lang])}</a>`).join('')}</dd>`:''}</dl>${examHistory(term)}<div class="term-source-links">${(term.sources||[]).map(id=>sourceMap.get(id)).filter(Boolean).map(s=>`<a href="${safeURL(s.url)}" target="_blank" rel="noopener noreferrer">${escape(s.title)} ↗</a>`).join('')}${(international?[]:term.exam||[]).map(e=>`<a href="${safeURL(e.url)}" target="_blank" rel="noopener noreferrer">${escape(e.label)} ↗</a>`).join('')}</div></div>`;
+  }
+  function examPreview(term){
+    if(!international)return '';
+    const labels=[...new Set(term._exams.map(e=>`${e.school} ${e.year}`))];
+    return `<p class="term-exam-preview">${labels.slice(0,3).map(escape).join(' · ')}${labels.length>3?` · 另${labels.length-3}组`:''}</p>`;
   }
   function card(term,openIDs) {
     const copy=ui[state.lang],primary=term[state.lang],secondary=term[state.lang==='zh'?'ja':'zh'];
-    return `<details class="term-card" id="term-${escape(term.id)}"${openIDs.has(term.id)?' open':''}><summary><div class="term-card-top"><span class="term-category">${escape(categories[term.category][state.lang])}</span><span class="term-flags">${term.exam?.length?`<span class="term-flag exam-flag">${copy.exam}</span>`:''}${review.saved.has(term.id)?`<span class="term-flag">★</span>`:''}${review.mastered.has(term.id)?`<span class="term-flag">✓ ${copy.mastered}</span>`:''}</span></div><span class="term-card-toggle" aria-hidden="true">＋</span><h3>${escape(primary)}</h3><p class="term-secondary"><span lang="${state.lang==='zh'?'ja':'zh-CN'}">${escape(secondary)}</span> · ${escape(term.en)}</p><p class="term-preview">${escape(term.definition[state.lang])}</p></summary>${fields(term)}<div class="term-content"><div class="term-actions"><button type="button" data-save="${escape(term.id)}" aria-pressed="${review.saved.has(term.id)}">${review.saved.has(term.id)?copy.unsave:copy.save}</button><button type="button" data-master="${escape(term.id)}" aria-pressed="${review.mastered.has(term.id)}">${review.mastered.has(term.id)?copy.unmark:copy.mark}</button><a href="#term-${escape(term.id)}" data-related="${escape(term.id)}">${copy.permalink}</a></div></div></details>`;
+    return `<details class="term-card" id="term-${escape(term.id)}"${openIDs.has(term.id)?' open':''}><summary><div class="term-card-top"><span class="term-category">${escape(categories[term.category][state.lang])}</span><span class="term-flags">${term.exam?.length?`<span class="term-flag exam-flag">${copy.exam}${international?` · ${term._exams.length}`:''}</span>`:''}${review.saved.has(term.id)?`<span class="term-flag">★</span>`:''}${review.mastered.has(term.id)?`<span class="term-flag">✓ ${copy.mastered}</span>`:''}</span></div><span class="term-card-toggle" aria-hidden="true">＋</span><h3>${escape(primary)}</h3><p class="term-secondary">${international?escape(term.en):`<span lang="${state.lang==='zh'?'ja':'zh-CN'}">${escape(secondary)}</span> · ${escape(term.en)}`}</p>${examPreview(term)}<p class="term-preview">${escape(term.definition[state.lang])}</p></summary>${fields(term)}<div class="term-content"><div class="term-actions"><button type="button" data-save="${escape(term.id)}" aria-pressed="${review.saved.has(term.id)}">${review.saved.has(term.id)?copy.unsave:copy.save}</button><button type="button" data-master="${escape(term.id)}" aria-pressed="${review.mastered.has(term.id)}">${review.mastered.has(term.id)?copy.unmark:copy.mark}</button><a href="#term-${escape(term.id)}" data-related="${escape(term.id)}">${copy.permalink}</a></div></div></details>`;
+  }
+  function matchesExamQuery(term,exam,parts){
+    return parts.every(p=>{
+      if(/^(?:19|20)\d{2}年?$/.test(p))return String(exam.year)===p.replace('年','');
+      const school=config.schoolAliases[p]||(config.schools.includes(p)?p:null);
+      if(school)return exam.school===school;
+      return (term.search+' '+exam.search).includes(p);
+    });
   }
   function render() {
     const active=document.activeElement;
     const focusAction=active?.dataset?.save?{type:'save',id:active.dataset.save}:active?.dataset?.master?{type:'master',id:active.dataset.master}:null;
     const openIDs=new Set([...document.querySelectorAll('.term-card[open]')].map(e=>e.id.slice(5)));
     const parts=normalize(state.query).split(' ').filter(Boolean);
-    filtered=terms.filter(t=>(state.category==='all'||t.category===state.category)&&parts.every(p=>t.search.includes(p))&&(state.status==='all'||(state.status==='saved'&&review.saved.has(t.id))||(state.status==='mastered'&&review.mastered.has(t.id))||(state.status==='unmastered'&&!review.mastered.has(t.id))||(state.status==='exam'&&t.exam?.length)));
+    filtered=terms.filter(t=>(state.category==='all'||t.category===state.category)&&(!international?parts.every(p=>t.search.includes(p)):t._exams.some(e=>(state.school==='all'||e.school===state.school)&&(state.year==='all'||String(e.year)===state.year)&&(state.evidence==='all'||e.evidenceKind===state.evidence)&&matchesExamQuery(t,e,parts)))&&(state.status==='all'||(state.status==='saved'&&review.saved.has(t.id))||(state.status==='mastered'&&review.mastered.has(t.id))||(state.status==='unmastered'&&!review.mastered.has(t.id))||(state.status==='exam'&&t.exam?.length)));
     const visible=filtered.slice(0,state.limit);
     $('#glossary-results').innerHTML=visible.map(t=>card(t,openIDs)).join('');
     $('#result-count').textContent=ui[state.lang].count(filtered.length,visible.length);
@@ -86,13 +109,13 @@
     }
   }
   function language(lang) {
-    state.lang=lang==='ja'?'ja':'zh';
+    state.lang=!international&&lang==='ja'?'ja':'zh';
     const copy=ui[state.lang];
     document.documentElement.lang=state.lang==='ja'?'ja':'zh-CN';
     document.title=`${copy.title} · 复调`;
     document.querySelectorAll('[data-ui]').forEach(e=>{e.innerHTML=copy[e.dataset.ui]||e.innerHTML;});
     document.querySelectorAll('[data-lang]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.lang===state.lang)));
-    $('.glossary-language').setAttribute('aria-label',copy.languageLabel);
+    $('.glossary-language')?.setAttribute('aria-label',copy.languageLabel);
     $('#glossary-nav').setAttribute('aria-label',copy.navLabel);
     $('.flashcard-close').setAttribute('aria-label',copy.closeLabel);
     $('#term-search').placeholder=copy.searchPlaceholder;
@@ -102,14 +125,16 @@
     $('#status-filter').innerHTML=['all','saved','unmastered','mastered','exam'].map(id=>`<option value="${id}">${copy[id]}</option>`).join('');
     $('#status-filter').value=state.status;
     $('#school-notes').innerHTML=schoolNotes.map(n=>`<section class="glossary-school-card"><h3>${escape(n.name)}</h3><p>${escape(n[state.lang])}</p><a href="${safeURL(n.url)}" target="_blank" rel="noopener noreferrer">${copy.sourceLink}</a></section>`).join('');
-    try {localStorage.setItem('polyphony-sociology-language',state.lang);} catch { /* Optional storage. */ }
+    try {if(!international)localStorage.setItem('polyphony-sociology-language',state.lang);} catch { /* Optional storage. */ }
+    if(international && papers.length)renderResearchNotes();
     if (terms.length) render();
     else $('#result-count').textContent=copy[loadState==='error'?'error':'loading'];
     if(flashTerm) showFlashTerm(flashTerm,false);
   }
   function openTerm(id) {
     if(!termMap.has(id)) return;
-    state.query='';state.category='all';state.status='all';
+    state.query='';state.category='all';state.status='all';state.school='all';state.year='all';state.evidence='all';
+    ['school','year','evidence'].forEach(k=>{const el=$(`#${k}-filter`);if(el)el.value='all';});
     $('#term-search').value='';$('#category-filter').value='all';$('#status-filter').value='all';
     state.limit=Math.max(24,Math.ceil((terms.findIndex(t=>t.id===id)+1)/24)*24);
     render();
@@ -132,7 +157,7 @@
   }
   function showFlashTerm(term,reset=true) {
     flashTerm=term;
-    $('#flashcard-prompt').innerHTML=`<h2 id="flashcard-title">${escape(term[state.lang])}</h2><p class="term-secondary">${escape(term[state.lang==='zh'?'ja':'zh'])} · ${escape(term.en)}</p>`;
+    $('#flashcard-prompt').innerHTML=`<h2 id="flashcard-title">${escape(term[state.lang])}</h2><p class="term-secondary">${international?escape(term.en):`${escape(term[state.lang==='zh'?'ja':'zh'])} · ${escape(term.en)}`} </p>`;
     $('#flashcard-answer').innerHTML=fields(term);
     if(reset)$('#flashcard-answer').hidden=true;
     $('#reveal-answer').textContent=ui[state.lang][$('#flashcard-answer').hidden?'reveal':'hide'];
@@ -165,9 +190,18 @@
     if(related){event.preventDefault();if($('#flashcard').open)$('#flashcard').close();openTerm(related.dataset.related);}
   });
   $('#glossary-results').addEventListener('toggle',e=>{if(e.target.matches('.term-card'))e.target.querySelector('.term-card-toggle').textContent=e.target.open?'−':'＋';},true);
+  function renderResearchNotes(){
+    const counts=new Map();papers.forEach(p=>{const a=counts.get(p.school)||[];a.push(p);counts.set(p.school,a)});
+    $('#school-notes').innerHTML=(config.schools||[]).map(name=>{const ps=counts.get(name)||[],coverage=config.coverage?.find(c=>c.school===name);return `<section class="glossary-school-card"><h3>${escape(name)}</h3><p>${ps.length} 份试题记录 · ${new Set(ps.map(p=>p.year)).size} 个年度</p><p>${escape(coverage?.notes||'收录已查到明确名词解释分节的公开材料；年份和版本见各条记录。')}</p>${ps.length?`<a href="#exam-archive">查看试题出处 ↓</a>`:''}</section>`}).join('');
+    $('#paper-count').textContent=papers.length;
+    $('#occurrence-count').textContent=terms.reduce((n,t)=>n+t._exams.length,0);
+    $('#exam-archive-list').innerHTML=[...papers].sort((a,b)=>b.year-a.year||a.school.localeCompare(b.school,'zh')).map(p=>`<details class="exam-paper"><summary><span><b>${escape(p.school)} · ${escape(p.year)}</b><small>${escape(p.courseCode||'')} ${escape(p.course)}</small></span><span class="evidence-tag">${escape(evidenceLabel(p.evidenceKind))}</span></summary><div class="exam-paper-body"><p>${escape(p.questionSection)} · ${escape(p.evidenceNote)}</p><div class="term-related">${p.terms.map(q=>{const t=terms.find(t=>t._exams.some(e=>e.paperId===p.id&&e.questionTerm===q));return t?`<a href="#term-${escape(t.id)}" data-related="${escape(t.id)}">${escape(q)}</a>`:`<span>${escape(q)}</span>`}).join('')}</div>${p.excludedTerms?.length?`<p class="exam-exclusions">未入词库的待核线索：${p.excludedTerms.map(e=>`${escape(e.questionTerm)}（${escape(e.reason)}）`).join('；')}</p>`:''}<a href="${safeURL(sourceMap.get(p.source)?.url)}" target="_blank" rel="noopener noreferrer">${escape(sourceMap.get(p.source)?.title)} ↗</a></div></details>`).join('');
+  }
+  ['school','year','evidence'].forEach(k=>{$(`#${k}-filter`)?.addEventListener('change',e=>{state[k]=e.target.value;state.limit=24;render();});});
   language(state.lang);
-  fetch('sociology-terms.json?v=20261009').then(response=>{if(!response.ok)throw new Error('Glossary unavailable');return response.json();}).then(data=>{
+  fetch(config?.dataURL||'sociology-terms.json?v=20261009').then(response=>{if(!response.ok)throw new Error('Glossary unavailable');return response.json();}).then(data=>{
     loadState='ready';sources=data.sources;sourceMap=new Map(sources.map(s=>[s.id,s]));
+    if(international){papers=data.papers;paperMap=new Map(papers.map(p=>[p.id,p]));config.coverage=data.coverage;$('#school-filter').innerHTML='<option value="all">全部学校</option>'+config.schools.map(s=>`<option value="${escape(s)}">${escape(s)}</option>`).join('');$('#year-filter').innerHTML='<option value="all">全部年份</option>'+[...new Set(papers.map(p=>p.year))].sort((a,b)=>b-a).map(y=>`<option value="${y}">${y} 年</option>`).join('');data.terms.forEach(t=>{t._exams=t.occurrences.map(e=>{const p=paperMap.get(e.paperId);return {...p,...e,search:normalize([p.school,p.year,e.questionTerm,p.course,p.courseCode].join(' '))}});t.exam=t._exams.map(e=>({label:`${e.school} ${e.year} · ${evidenceLabel(e.evidenceKind)}`,url:sourceMap.get(e.source).url}));});}
     terms=data.terms.map(t=>({...t,search:normalize([t.zh,t.ja,t.en,t.scholar.zh,t.scholar.ja,...(t.aliases||[]),t.definition.zh,t.definition.ja].join(' '))}));
     termMap=new Map(terms.map(t=>[t.id,t]));
     $('#total-count').textContent=terms.length;

@@ -5,7 +5,7 @@
   const root = document.querySelector('#sociology-log');
   if (!root) return;
   const translations = [
-    ['.sociology-kicker', '<span class="section-index" aria-hidden="true">02 /</span> 社会学 / 学習記録'],
+    ['.sociology-kicker', '<span class="section-index" aria-hidden="true">LEARNING /</span> 社会学 / 学習記録'],
     ['#sociology-title', '社会学<br><span>学習記録。</span>'],
     ['.sociology-header-grid > div > p', '一つの問いから始め、日々理解を修正する。<br>概念と事例、そして考え方が変わった過程を記録する。'],
     ['.sociology-count', '2026.10.05 — 10.08 · 4件の記録 / 第1章読了'],
@@ -19,9 +19,9 @@
     ['article[aria-labelledby="study-2026-10-08"] .sociology-date span', '木曜 / 04'],
     ['article[aria-labelledby="study-2026-10-08"] .sociology-card-kicker', '第1章読了 · 社会問題はいかに構築されるか'],
     ['article[aria-labelledby="study-2026-10-08"] .sociology-question', '「事実」や「統計」にも形成・流通・利用の過程がある。それは社会問題の研究をどう変えるのか。'],
-    ['article[aria-labelledby="study-2026-10-08"] .sociology-notes section:nth-child(1) h4', 'クレイムから反応へ'],
+    ['article[aria-labelledby="study-2026-10-08"] .sociology-notes section:nth-child(1) h3', 'クレイムから反応へ'],
     ['article[aria-labelledby="study-2026-10-08"] .sociology-notes section:nth-child(1) p', '構築主義は<strong>クレイム申し立て、論争、制度的な反応</strong>を経験的な研究対象とする。主張の真偽についての判断をいったん留保し、誰が問題を提起し、どんなレトリックを用い、誰に対応を求め、主張がどう広がり、あるいは沈静化するのかを観察する。'],
-    ['article[aria-labelledby="study-2026-10-08"] .sociology-notes section:nth-child(2) h4', '数字にも社会的な過程がある'],
+    ['article[aria-labelledby="study-2026-10-08"] .sociology-notes section:nth-child(2) h3', '数字にも社会的な過程がある'],
     ['article[aria-labelledby="study-2026-10-08"] .sociology-notes section:nth-child(2) p', '統計には、まず<strong>定義、分類、記録、集計方法</strong>の選択がある。その後、数字はメディアや機関に選ばれ、比較され、引用される。数字が論拠になる過程を研究することは、その数字が虚偽だと決めつけることではない。資料の正確さは別途検証しなければならない。'],
     ['article[aria-labelledby="study-2026-10-08"] .sociology-paragraph', '教材は『〈児童虐待〉の構築』を例に、「虐待の増加」という公的な語りを、定義の変化、関心の高まり、福祉制度、統計や事例の用いられ方と結びつけて分析する。ここで研究するのは問題が定義され制度化される過程であり、被害を否定することではない。'],
     ['article[aria-labelledby="study-2026-10-08"] .sociology-reflection', '第1章を一連の問いとして整理した。その現象にはどんな社会的機能があるか。誰が規則を作り、逸脱と認定するのか。誰がある状況を社会問題として訴え、事実や数字はその主張をどう支えるのか。この流れを下のマインドマップにまとめた。'],
@@ -31,9 +31,9 @@
     ['article[aria-labelledby="study-2026-10-07"] .sociology-date span', '水曜 / 03'],
     ['article[aria-labelledby="study-2026-10-07"] .sociology-card-kicker', '逸脱研究 → 社会問題'],
     ['article[aria-labelledby="study-2026-10-07"] .sociology-question', '「黙認」「未発見」「法の空白」のうち、どれが隠れた逸脱に当たるのか。'],
-    ['article[aria-labelledby="study-2026-10-07"] .sociology-notes section:nth-child(1) h4', '事例を修正する'],
+    ['article[aria-labelledby="study-2026-10-07"] .sociology-notes section:nth-child(1) h3', '事例を修正する'],
     ['article[aria-labelledby="study-2026-10-07"] .sociology-notes section:nth-child(1) p', '「隠れた逸脱」には、<strong>既存の規則への違反</strong>がありながら、関係者がその具体的な行為を逸脱として認定していないことが必要だ。論文の盗用が行われたのに、オリジナルと見なされている場合がわかりやすい。違反が認定されていて、ただ黙認・不処罰となった場合を、「追及されなかった」だけでこの類型に入れることはできない。適用される規則がなければ、判断の根拠から確認する。'],
-    ['article[aria-labelledby="study-2026-10-07"] .sociology-notes section:nth-child(2) h4', '定義される過程を問う'],
+    ['article[aria-labelledby="study-2026-10-07"] .sociology-notes section:nth-child(2) h3', '定義される過程を問う'],
     ['article[aria-labelledby="study-2026-10-07"] .sociology-notes section:nth-child(2) p', '社会問題の構築主義は、<strong>誰がクレイムを申し立て、どう名付け、誰に責任を求め、機関がどう反応するか</strong>に注目する。うつ病を公共的な議題として扱う例では、個人の苦痛が集団的な支援を要する問題としてどう提起されるかを調べる。「構築された」と言っても、苦痛が架空だという意味ではない。'],
     ['article[aria-labelledby="study-2026-10-07"] .sociology-reflection', '今日の学び：研究者は、ある主張の真偽の判断をいったん留保し、クレイムと反応の過程を観察できる。これは研究対象を限定する方法であり、主張を無条件に支持することではない。最後に、機能主義、ラベリング理論、構築主義を一枚の日本語の図に整理した。'],
     ['article[aria-labelledby="study-2026-10-07"] .sociology-tags', '<span>隠れた逸脱</span><span>構築主義</span><span>クレイム申し立て</span>'],
@@ -58,9 +58,9 @@
     ['article[aria-labelledby="study-2026-10-05"] .sociology-date span', '月曜 / 01'],
     ['article[aria-labelledby="study-2026-10-05"] .sociology-card-kicker', '二つの理論への入口'],
     ['article[aria-labelledby="study-2026-10-05"] .sociology-question', '「機能主義？」「ラベリング理論？」——日本語の教材に出てきた二つの用語から始まった。'],
-    ['article[aria-labelledby="study-2026-10-05"] .sociology-notes section:nth-child(1) h4', '機能主義'],
+    ['article[aria-labelledby="study-2026-10-05"] .sociology-notes section:nth-child(1) h3', '機能主義'],
     ['article[aria-labelledby="study-2026-10-05"] .sociology-notes section:nth-child(1) p', '家族や学校などの制度を社会システムの中に位置づけ、それがどんな結果をもたらし、他の部分とどうつながるかを考える。「機能」は当事者の主観的な目的でも、道徳的な正当性でもない。デュルケーム、パーソンズ、マートンはそれぞれ異なる分析の手がかりを与える。'],
-    ['article[aria-labelledby="study-2026-10-05"] .sociology-notes section:nth-child(2) h4', 'ラベリング理論'],
+    ['article[aria-labelledby="study-2026-10-05"] .sociology-notes section:nth-child(2) h3', 'ラベリング理論'],
     ['article[aria-labelledby="study-2026-10-05"] .sociology-notes section:nth-child(2) p', 'ベッカーは「なぜ規則に違反するのか」から、<strong>誰が規則を作り、誰がラベルを貼る権力をもち、そのラベルが当人の扱われ方をどう変えるか</strong>へ視線を移した。ラベルは逸脱者という地位や社会的反応に影響するが、実際の行為の検討を不要にするわけではない。'],
     ['article[aria-labelledby="study-2026-10-05"] .sociology-reflection', '出発点は二つの定義を暗記することではなかった。同じ現象でも、問いの立て方によって、まったく異なる構造が見えてくる。'],
     ['article[aria-labelledby="study-2026-10-05"] .sociology-tags', '<span>機能主義</span><span>ラベリング理論</span><span>ハワード・S・ベッカー</span>'],
@@ -92,8 +92,12 @@
   const switcher = root.querySelector('.sociology-language');
   const mapTiers = root.querySelector('.sociology-map-tiers');
   const fourGrid = root.querySelector('.map-four-grid');
+  const pageCopy={learning:'学習',glossary:'社会学用語集',international:'国際政治用語集',journal:'社会学の学習記録',author:'記録者 Misaka10320 ↗',back:'← 学習へ戻る',top:'ページ上部へ ↑',skip:'本文へ'};
+  const pageNodes=[...document.querySelectorAll('[data-journal-ui]')].map(el=>({el,zh:el.innerHTML,ja:pageCopy[el.dataset.journalUi]}));
   function setLanguage(lang) {
     const japanese = lang === 'ja';
+    pageNodes.forEach(n=>n.el.innerHTML=japanese?n.ja:n.zh);
+    if(document.body.classList.contains('learning-journal-page')){document.documentElement.lang=japanese?'ja':'zh-CN';document.title=japanese?'社会学の学習記録 · 复调':'社会学学习日志 · 复调';}
     for (const node of nodes) node.element.innerHTML = japanese ? node.japanese : node.chinese;
     root.lang = japanese ? 'ja' : 'zh-CN';
     timeline.setAttribute('aria-label', japanese ? '社会学の学習年表。新しい記録から順に表示' : '社会学学习时间轴，最新记录在前');
