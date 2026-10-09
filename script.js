@@ -51,7 +51,7 @@ document.querySelectorAll('[data-year]').forEach(el=>{el.textContent=new Date().
   const nav=document.querySelector('.nav'),progress=document.querySelector('.progress');
   const article=document.querySelector('article.prose');
   const chapterLinks=Array.from(document.querySelectorAll('.contents a[href^="#"]'));
-  const chapters=chapterLinks.map(link=>({link,section:document.getElementById(decodeURIComponent(link.hash.slice(1)))})).filter(item=>item.section);
+  const chapters=chapterLinks.map(link=>({link,section:document.getElementById(decodeURIComponent(link.hash.slice(1)))})).filter(item=>item.section).sort((a,b)=>a.section===b.section?0:a.section.compareDocumentPosition(b.section)&Node.DOCUMENT_POSITION_FOLLOWING?-1:1);
   let pending=false,active=null;
   function update(){
     pending=false;nav?.classList.toggle('is-scrolled',scrollY>18);

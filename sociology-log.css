@@ -9,6 +9,18 @@
 .learning-log-meta { display: flex; align-items: center; gap: 25px; color: #687661; font-size: 11px; line-height: 1.8; white-space: nowrap; }
 .learning-log-arrow { display: grid; place-items: center; flex: none; width: 42px; height: 42px; border: 1px solid #cbd6c3; border-radius: 50%; color: #45563f; font-size: 19px; transition: background .35s,color .35s; }
 .learning-log-link:hover .learning-log-arrow { background: #35482f; color: #fff; }
+.study-home-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 18px; margin-top: 24px; }
+.study-home-grid .learning-log-link { grid-template-columns: 1fr; margin: 0; gap: 23px; }
+.study-home-grid .learning-log-meta { justify-content: space-between; }
+.study-home-grid .learning-log-title { font-size: 29px; }
+.sociology-glossary-entry { display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 30px; margin: -22px 0 43px; padding: 29px 35px; border: 1px solid #cddac3; border-radius: 16px; background: #edf2e7; transition: border-color .25s; }
+.sociology-glossary-entry:hover { border-color: #7b9870; }
+.resource-kicker { color: #718568; font-size: 9px; letter-spacing: .14em; }
+.resource-title { margin: 9px 0; color: #33492c; font-size: 30px; font-weight: 550; letter-spacing: -.04em; }
+.resource-title > span { color: #92a485; }
+.resource-copy { color: #687d5d; font-size: 12px; line-height: 1.85; }
+.resource-meta { color: #718966; font-size: 11px; line-height: 1.9; text-align: right; }
+.resource-meta b { display: block; margin-top: 15px; font-size: 25px; font-weight: 400; }
 
 .author-misaka .hero-bottom { gap: 28px; }
 .author-actions { display: flex; align-items: center; justify-content: flex-end; gap: 23px; flex-wrap: wrap; }
@@ -135,6 +147,11 @@
   .sociology-source { margin-left: 176px; }
 }
 @media (max-width: 680px) {
+  .study-home-grid { grid-template-columns: 1fr; }
+  .sociology-glossary-entry { grid-template-columns: 1fr; gap: 16px; margin-top: -10px; padding: 25px; }
+  .resource-title { font-size: 27px; }
+  .resource-meta { display: flex; justify-content: space-between; align-items: center; text-align: left; }
+  .resource-meta b { margin: 0; }
   .learning-log-link { grid-template-columns: 1fr; gap: 22px; margin-top: 20px; padding: 26px 25px; border-radius: 15px; }
   .learning-log-title { font-size: 27px; }
   .learning-log-description { font-size: 12px; }

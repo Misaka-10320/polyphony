@@ -10,6 +10,10 @@
     ['.sociology-header-grid > div > p', '一つの問いから始め、日々理解を修正する。<br>概念と事例、そして考え方が変わった過程を記録する。'],
     ['.sociology-count', '2026.10.05 — 10.08 · 4件の記録 / 第1章読了'],
     ['.sociology-map-shortcut', '第1章のマインドマップを見る <span aria-hidden="true">↗</span>'],
+    ['.resource-kicker', 'STUDY DESK / 大学院入試の復習'],
+    ['.resource-title', '社会学用語解説<span>。</span>'],
+    ['.resource-copy', '定義、研究者、具体例、混同しやすい点をつなぐ。<br>理論から調査方法まで。検索にも、暗記の確認にも。'],
+    ['.resource-meta', '中文 / 日本語<br>検索 · 分類 · お気に入り · 復習 <b aria-hidden="true">↗</b>'],
 
     ['#study-2026-10-08', '数字はいかに根拠となり、<br>問題はいかに「問題」になるのか'],
     ['article[aria-labelledby="study-2026-10-08"] .sociology-date span', '木曜 / 04'],
