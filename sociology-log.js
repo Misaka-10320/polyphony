@@ -8,12 +8,32 @@
     ['.sociology-kicker', '<span class="section-index" aria-hidden="true">LEARNING /</span> 社会学 / 学習記録'],
     ['#sociology-title', '社会学<br><span>学習記録。</span>'],
     ['.sociology-header-grid > div > p', '一つの問いから始め、日々理解を修正する。<br>概念と事例、そして考え方が変わった過程を記録する。'],
-    ['.sociology-count', '2026.10.05 — 10.08 · 4件の記録 / 第1章読了'],
+    ['.sociology-count', '2026.10.05 — 10.15 · 5件の記録 / 第1章読了・振り返り'],
     ['.sociology-map-shortcut', '第1章のマインドマップを見る <span aria-hidden="true">↗</span>'],
     ['.resource-kicker', 'STUDY DESK / 大学院入試の復習'],
     ['.resource-title', '社会学用語解説<span>。</span>'],
     ['.resource-copy', '定義、研究者、具体例、混同しやすい点をつなぐ。<br>理論から調査方法まで。検索にも、暗記の確認にも。'],
     ['.resource-meta', '中文 / 日本語<br>検索 · 分類 · お気に入り · 復習 <b aria-hidden="true">↗</b>'],
+
+    ["#study-2026-10-15", "事例は説明できた。<br>では、本文の主張は何か。"],
+    ["article[aria-labelledby=\"study-2026-10-15\"] .sociology-date span", "木曜 / 05"],
+    ["article[aria-labelledby=\"study-2026-10-15\"] .sociology-card-kicker", "第1章の授業を振り返る · 本文・論証・資料"],
+    ["article[aria-labelledby=\"study-2026-10-15\"] .sociology-question", "概念を説明し、事例を挙げられれば、著者を理解したと言えるのだろうか。今回の振り返りで、本文へ意識が戻った。著者は何に答え、どのように論証を進めているのか。"],
+    ["article[aria-labelledby=\"study-2026-10-15\"] .sociology-notes section:nth-child(1) h3", "まず本文の主張をつかむ"],
+    ["article[aria-labelledby=\"study-2026-10-15\"] .sociology-notes section:nth-child(1) p", "報告の軸は、<strong>本文の主張と論証のつながり</strong>に置く。脚注、分類表、自分の事例は理解を助けるものだ。取り上げるたびに、著者のどの主張を説明し、なぜここに置かれ、前後の議論とどうつながるのかを示したい。分類を説明するだけでは、著者がそれを必要とした理由は伝わらない。"],
+    ["article[aria-labelledby=\"study-2026-10-15\"] .sociology-notes section:nth-child(2) h3", "マートン：「真の問題」を誰が判断するか"],
+    ["article[aria-labelledby=\"study-2026-10-15\"] .sociology-notes section:nth-child(2) p", "本章で検討される疑問は、ある定義が社会学者に<strong>「真の社会問題」を見分ける</strong>立場を与えることに向けられている。人々がまだ気づいていない問題まで発見できるとすれば、その特別な判断能力は何によって裏づけられるのか。この問いを説明することが、続く議論を理解する手がかりになる。ここでは、本章における社会問題の定義の検討に焦点を絞る。"],
+    ["article[aria-labelledby=\"study-2026-10-15\"] .sociology-notes section:nth-child(3) h3", "ラベリング理論：認定の過程も統計に入る"],
+    ["article[aria-labelledby=\"study-2026-10-15\"] .sociology-notes section:nth-child(3) p", "ラベリング理論では、<strong>誰がある行為を逸脱と認定するのか</strong>を問う。犯罪統計の記録件数は、認定基準、被害の届け出、取締り、記録手続きにも左右され、実際の発生件数とそのまま同一視できない。地域間の数字を比べる際には、誰が記録し、どの行為が記録され、手続きが共通しているかも確かめる必要がある。"],
+    ["article[aria-labelledby=\"study-2026-10-15\"] .sociology-notes section:nth-child(4) h3", "構築主義：クレイムの活動を追う"],
+    ["article[aria-labelledby=\"study-2026-10-15\"] .sociology-notes section:nth-child(4) p", "スペクターとキツセの<strong>「クレイム申し立て活動」</strong>を理解するには、問題を提起する活動を具体的に捉える必要がある。誰が、いつ、「これは問題だ」と述べ、誰に何を求め、周囲がどう応答し、活動がどう展開したのか。うつ病などを例にする場合も、当事者、家族、専門家それぞれの主張と、その時間的な順序を確かめたい。"],
+    ["article[aria-labelledby=\"study-2026-10-15\"] .sociology-notes section:nth-child(5) h3", "研究対象：まず用語を正確にする"],
+    ["article[aria-labelledby=\"study-2026-10-15\"] .sociology-notes section:nth-child(5) p", "日本語の<strong>「高校卒業者」は高校を卒業した人</strong>を指し、大学を卒業した人なら「大学卒業者／大卒者」と書く。まず必要なのは用語の確認であり、研究対象は、研究上の問いと資料に基づいて自分で決める必要がある。研究計画の実際の表現を確認し、なぜその集団を対象とするのかを、問いと資料に基づいて説明したい。"],
+    ["article[aria-labelledby=\"study-2026-10-15\"] .sociology-notes section:nth-child(6) h3", "「問題化」をたどる具体的な資料を探す"],
+    ["article[aria-labelledby=\"study-2026-10-15\"] .sociology-notes section:nth-child(6) p", "統計は雇用現象の分布や変化を示す。一方、報道、団体の声明、政策文書は、その現象が対処すべき問題としてどう提起されたかを追う資料になる。今後は<strong>「行為者―時期―一次資料―主張―研究対象との関係」</strong>の表を作り、具体的に示して引用できる証拠を探したい。現象の深刻さだけでは、問題化の過程を説明したことにはならない。"],
+    ["article[aria-labelledby=\"study-2026-10-15\"] .sociology-paragraph", "本文を整理するときは、小節ごとに<strong>「問い―主張―根拠―事例の役割―前後のつながり」</strong>を書き出し、ページ番号を添える方法を試したい。「本文の要約」と「自分の考察」を分け、自分の連想が本文のどの主張に対応するかを明示する。そのうえで本を閉じ、日本語で主張と論証を説明し、説明できない箇所は本文に戻って確認する。"],
+    ["article[aria-labelledby=\"study-2026-10-15\"] .sociology-reflection", "これからの復習では本文を軸に、概念を著者の論証の中へ戻して考えたい。ベッカーとマートンの間にも連続する点がある。本章がマートン、ラベリング理論、構築主義と進む順序を、それぞれが前の理論を完全に置き換える一直線の図にはできない。後の議論が何に応え、何を引き継ぎ、どこを進めたのかを説明する必要がある。"],
+    ["article[aria-labelledby=\"study-2026-10-15\"] .sociology-tags", "<span>第1章の振り返り</span><span>本文と論証</span><span>ラベリング理論</span><span>クレイム申し立て活動</span><span>研究資料</span>"],
 
     ['#study-2026-10-08', '数字はいかに根拠となり、<br>問題はいかに「問題」になるのか'],
     ['article[aria-labelledby="study-2026-10-08"] .sociology-date span', '木曜 / 04'],
@@ -80,7 +100,7 @@
     ['.sociology-synthesis li:nth-child(2) p', '誰が規則を作り、誰が逸脱者と認定されるか。'],
     ['.sociology-synthesis li:nth-child(3) span', '03 / 構築主義'],
     ['.sociology-synthesis li:nth-child(3) p', '誰が公共的な問題として提起し、どんな反応を受けるか。'],
-    ['.sociology-source', '<a href="https://chatgpt.com/share/6ac58f86-b75c-83ee-abda-2fb4ac1cf96d" target="_blank" rel="noopener noreferrer">10月5〜7日の学習対話 ↗</a>と<a href="https://chatgpt.com/share/6ac74d89-07e8-83ee-9a71-3210e27c609e" target="_blank" rel="noopener noreferrer">10月8日の学習対話 ↗</a>をもとに整理。日付は日本時間。マインドマップは対話で扱った第1章の内容を要約したもので、教材全文の転載ではない。']
+    [".sociology-source", "<a href=\"https://chatgpt.com/share/6ac58f86-b75c-83ee-abda-2fb4ac1cf96d\" target=\"_blank\" rel=\"noopener noreferrer\">10月5〜7日の学習対話 ↗</a>、<a href=\"https://chatgpt.com/share/6ac74d89-07e8-83ee-9a71-3210e27c609e\" target=\"_blank\" rel=\"noopener noreferrer\">10月8日の学習対話 ↗</a>、<a href=\"https://chatgpt.com/share/6ad056d6-2db8-83ee-8afc-48636fd212e9\" target=\"_blank\" rel=\"noopener noreferrer\">10月15日の授業録音の振り返り ↗</a>をもとに整理。日付は日本時間。10月15日の記録は対話中の録音分析に基づく要約であり、重要な用語・引用・ページ番号は教材で確認する。マインドマップは第1章の概念整理で、教材全文の転載ではない。"]
   ];
   const nodes = translations.map(([selector, japanese]) => {
     const element = root.querySelector(selector);
