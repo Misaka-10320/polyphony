@@ -25,6 +25,7 @@
 .glossary-school-notes > summary,.glossary-source-notes > summary { display: flex; justify-content: space-between; gap: 20px; padding: 18px 0; color: #53664a; font-size: 12px; list-style: none; cursor: pointer; }
 summary::-webkit-details-marker { display: none; }
 .glossary-school-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px; padding-bottom: 20px; }
+@media(min-width:901px) { .glossary-page:not([data-glossary="international"]) .glossary-school-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
 .glossary-school-card { padding: 22px; border: 1px solid #dfe3d7; border-radius: 12px; background: #fafbf7; }
 .glossary-school-card h3 { font-size: 16px; font-weight: 570; margin: 0 0 9px; }
 .glossary-school-card p { font-size: 12px; color: #68725f; line-height: 1.85; }
@@ -56,6 +57,9 @@ summary::-webkit-details-marker { display: none; }
 .term-flags { display: flex; gap: 5px; flex-wrap: wrap; justify-content: flex-end; }
 .term-flag { font-size: 10px; color: #526d42; background: #edf3e8; border-radius: 100px; padding: 2px 7px; }
 .term-flag.exam-flag { color: #806239; background: #f6f0e5; }
+.term-sociology-exams { display: flex; flex-wrap: wrap; gap: 5px; margin: 12px 0 0; color: #806239; font-size: 11px; line-height: 1.7; }
+.term-sociology-exams span { padding: 3px 8px; border: 1px solid #e8dcc6; border-radius: 6px; background: #faf5eb; }
+.glossary-page:not([data-glossary="international"]) .term-card { scroll-margin-top: calc(var(--polyphony-nav-height,78px) + 230px); }
 .term-card h3 { display: inline; margin: 0; color: #2a3a27; font-size: 22px; font-weight: 570; line-height: 1.45; letter-spacing: -.035em; }
 .term-card-toggle { float: right; color: #7f9672; font-size: 19px; }
 .term-secondary { margin-top: 6px; color: #627258; font-size: 12px; line-height: 1.65; }

@@ -22,32 +22,33 @@
       description:'面向修士入试与日常学习的中日双语词库。<br>从一句定义出发，接上学者、例子与概念的边界。',terms:'个词条',categories:'个领域',mastered:'已掌握',
       answerKicker:'不止记住名字 / 写出解释',answerTitle:'让答案有一条完整的线。',answer1:'定义：它解释什么现象？',answer2:'学者：谁在什么论述中使用它？',answer3:'机制与例子：它怎样运作？',answer4:'区别：它不等同于哪个邻近概念？',
       answerNote:'同志社 2026 年度秋期公开题要求结合学者或著作与具体例。词条是答题提纲，篇幅与论证应按实际题目展开。',
-      schoolTitle:'目标校与公开资料',scope:'覆盖通用基础与地域、文化、福祉等方向；不把某次出现的术语当成固定考纲。标有「公开题例」的词条附具体题目链接。',browserTitle:'查词与复习',clear:'清空',random:'抽一词 ↗',categoryLabel:'领域',statusLabel:'范围',recall:'背诵模式',readNote:'展开词条，查看完整解释。',recallNote:'先看名词，尝试解释，再展开核对。',more:'显示更多词条 ↓',
+      schoolTitle:'目标校与公开资料',scope:'覆盖通用基础与地域、文化、福祉等方向；不把某次出现的术语当成固定考纲。标有「公开题例」的词条附具体题目链接；年度依试卷的招生年度标记。',browserTitle:'查词与复习',clear:'清空',random:'抽一词 ↗',categoryLabel:'领域',statusLabel:'范围',schoolLabel:'出题学校',yearLabel:'招生年度',allSchools:'全部学校',allYears:'全部年度',yearSuffix:'年度',examLink:'官方原卷',recall:'背诵模式',readNote:'展开词条，查看完整解释。',recallNote:'先看名词，尝试解释，再展开核对。',more:'显示更多词条 ↓',
       localNote:'收藏与掌握状态只保存在当前浏览器，不上传到服务器。',sourceTitle:'编写依据与延伸阅读',sourceNote:'解释为本站整理的学习提纲；例子用于说明概念，除明确标注外不代表已验证的个案研究。每个词条均链接到相关教材、学术原文或课程资料。',back:'← 回到社会学学习日志',copyright:'© 2026 复调 · 持续学习，持续修正。',top:'回到顶部 ↑',
-      flashcardKicker:'RECALL / 先试着解释',reveal:'查看解释',hide:'收起解释',markMastered:'标记已掌握',unmarkMastered:'已掌握 ✓ / 撤销',next:'下一词 →',allCategories:'全部领域',all:'全部词条',saved:'已收藏',unmastered:'待复习',exam:'公开题例',save:'收藏 ☆',unsave:'已收藏 ★',mark:'标记掌握',unmark:'已掌握 ✓',permalink:'词条链接 ↗',scholar:'相关学者 / 理论脉络',example:'例子',distinction:'易混点 / 边界',related:'关联概念',source:'参考资料',searchPlaceholder:'搜索中文、日文、英文或学者',searchLabel:'搜索词条',languageLabel:'词库语言切换',navLabel:'主导航',closeLabel:'关闭抽词卡片',empty:'没有找到匹配词条。试试另一种语言、学者名，或调整筛选范围。',loading:'正在载入词库…',error:'词库暂未载入，请刷新页面重试。',count:(a,b)=>`找到 ${a} 个词条 · 已显示 ${b} 个`,sourceLink:'官方资料 ↗'
+      flashcardKicker:'RECALL / 先试着解释',reveal:'查看解释',hide:'收起解释',markMastered:'标记已掌握',unmarkMastered:'已掌握 ✓ / 撤销',next:'下一词 →',allCategories:'全部领域',all:'全部词条',saved:'已收藏',unmastered:'待复习',exam:'公开题例',save:'收藏 ☆',unsave:'已收藏 ★',mark:'标记掌握',unmark:'已掌握 ✓',permalink:'词条链接 ↗',scholar:'相关学者 / 理论脉络',example:'例子',distinction:'易混点 / 边界',related:'关联概念',source:'参考资料',searchPlaceholder:'搜索概念、学者、学校或年度',searchLabel:'搜索词条',languageLabel:'词库语言切换',navLabel:'主导航',closeLabel:'关闭抽词卡片',empty:'没有找到匹配词条。试试另一种语言、学者名，或调整筛选范围。',loading:'正在载入词库…',error:'词库暂未载入，请刷新页面重试。',count:(a,b)=>`找到 ${a} 个词条 · 已显示 ${b} 个`,sourceLink:'官方资料 ↗'
     },
     ja: {
       skip:'本文へ',learning:'学習',journal:'学習記録',map:'マインドマップ',home:'ホーム ↗',title:'社会学用語解説',subtitle:'概念を、理解につなぐ。',begin:'用語を探す ↓',
       description:'大学院入試と日々の学習のための中日二言語の用語集。<br>定義に研究者、具体例、概念の境界を結びつける。',terms:'用語',categories:'領域',mastered:'習得済み',
       answerKicker:'名前を覚える、その先へ',answerTitle:'説明に、一本の筋を通す。',answer1:'定義：どのような現象を説明するか。',answer2:'研究者：誰が、どの議論で用いたか。',answer3:'仕組みと例：どう働くか。',answer4:'区別：近い概念と何が違うか。',
       answerNote:'同志社大学の2026年度秋期公開問題では、研究者・著作への言及と具体例が求められた。各項目は答案の骨子であり、分量と論証は実際の設問に合わせて展開する。',
-      schoolTitle:'志望校と公開資料',scope:'共通の基礎と地域・文化・福祉などの領域を扱う。過去の一題を固定的な出題範囲とみなさない。「公開出題例」の項目には該当する問題へのリンクを付す。',browserTitle:'用語検索と復習',clear:'消去',random:'一語を引く ↗',categoryLabel:'領域',statusLabel:'範囲',recall:'暗記モード',readNote:'項目を開いて解説を読む。',recallNote:'用語を見て説明を考え、開いて確認する。',more:'さらに表示 ↓',
+      schoolTitle:'志望校と公開資料',scope:'共通の基礎と地域・文化・福祉などの領域を扱う。過去の一題を固定的な出題範囲とみなさない。「公開出題例」の項目には該当する問題へのリンクを付す。年度は問題冊子に記載された入試年度に従う。',browserTitle:'用語検索と復習',clear:'消去',random:'一語を引く ↗',categoryLabel:'領域',statusLabel:'範囲',schoolLabel:'出題校',yearLabel:'入試年度',allSchools:'全大学',allYears:'全年度',yearSuffix:'年度',examLink:'公式の過去問題',recall:'暗記モード',readNote:'項目を開いて解説を読む。',recallNote:'用語を見て説明を考え、開いて確認する。',more:'さらに表示 ↓',
       localNote:'お気に入りと習得状況はこのブラウザーだけに保存され、サーバーに送信されない。',sourceTitle:'編纂資料と発展的な読書',sourceNote:'解説は当サイトで整理した学習用の骨子である。例は概念の説明用で、明記した場合を除き検証済みの事例研究ではない。各項目に関連する教材・原著・講義資料へのリンクを付す。',back:'← 社会学の学習記録に戻る',copyright:'© 2026 复调 · 学び、理解を更新する。',top:'ページ上部へ ↑',
-      flashcardKicker:'RECALL / まず説明してみる',reveal:'解説を見る',hide:'解説を隠す',markMastered:'習得済みにする',unmarkMastered:'習得済み ✓ / 取り消す',next:'次の用語 →',allCategories:'全領域',all:'全項目',saved:'お気に入り',unmastered:'未習得',exam:'公開出題例',save:'お気に入り ☆',unsave:'登録済み ★',mark:'習得済みにする',unmark:'習得済み ✓',permalink:'項目リンク ↗',scholar:'関連する研究者 / 理論',example:'具体例',distinction:'混同しやすい点 / 限界',related:'関連概念',source:'参考資料',searchPlaceholder:'中国語・日本語・英語・研究者名で検索',searchLabel:'用語を検索',languageLabel:'用語集の言語切り替え',navLabel:'主なナビゲーション',closeLabel:'復習カードを閉じる',empty:'該当する項目がない。別の言語や研究者名を試すか、絞り込み条件を変えてください。',loading:'用語集を読み込んでいます…',error:'用語集を読み込めませんでした。ページを再読み込みしてください。',count:(a,b)=>`${a}項目が該当 · ${b}項目を表示`,sourceLink:'公式資料 ↗'
+      flashcardKicker:'RECALL / まず説明してみる',reveal:'解説を見る',hide:'解説を隠す',markMastered:'習得済みにする',unmarkMastered:'習得済み ✓ / 取り消す',next:'次の用語 →',allCategories:'全領域',all:'全項目',saved:'お気に入り',unmastered:'未習得',exam:'公開出題例',save:'お気に入り ☆',unsave:'登録済み ★',mark:'習得済みにする',unmark:'習得済み ✓',permalink:'項目リンク ↗',scholar:'関連する研究者 / 理論',example:'具体例',distinction:'混同しやすい点 / 限界',related:'関連概念',source:'参考資料',searchPlaceholder:'概念・研究者・大学・入試年度で検索',searchLabel:'用語を検索',languageLabel:'用語集の言語切り替え',navLabel:'主なナビゲーション',closeLabel:'復習カードを閉じる',empty:'該当する項目がない。別の言語や研究者名を試すか、絞り込み条件を変えてください。',loading:'用語集を読み込んでいます…',error:'用語集を読み込めませんでした。ページを再読み込みしてください。',count:(a,b)=>`${a}項目が該当 · ${b}項目を表示`,sourceLink:'公式資料 ↗'
     }
   };
   if(config)Object.assign(ui.zh,config.ui);
   const schoolNotes = config?.schoolNotes || [
     {name:'滋賀県立大学',url:'https://www.shc.usp.ac.jp/region/graduate-school/',zh:'地域文化学强调以多种研究方法理解日本、亚洲的地域社会与文化。可把地域、文化概念与田野调查方法一起复习。',ja:'地域文化学は多様な方法で日本・アジアの地域社会と文化を研究する。地域・文化概念をフィールドワークの方法と併せて学ぶ。'},
     {name:'同志社大学',url:'https://ss.doshisha.ac.jp/files/shajm/page/7.shakai_zenki_ryugakusei26FAL.pdf',zh:'已核对 2026 年度秋、春期外国人留学生社会学题例：理论、统计与研究方法均有出现。秋期要求定义之外结合学者或著作及具体例。',ja:'2026年度秋・春期の外国人留学生社会学問題を確認。理論、統計、研究方法の出題例がある。秋期は定義に加えて研究者・著作と具体例を求める。'},
-    {name:'京都府立大学',url:'https://www.kpu.ac.jp/graduate/exam/exam/',zh:'社会科学研究科含公共政策学与福祉社会学。社会学、社会福祉、地域与人的发展可相互联系；具体选拔科目须对照当年度要项。',ja:'社会科学研究科には公共政策学・福祉社会学がある。社会学、社会福祉、地域、人間形成を関連づけて学び、受験科目は当年度の要項で確認する。'}
+    {name:'京都府立大学',url:'https://www.kpu.ac.jp/graduate/exam/exam/',zh:'社会科学研究科含公共政策学与福祉社会学。社会学、社会福祉、地域与人的发展可相互联系；具体选拔科目须对照当年度要项。',ja:'社会科学研究科には公共政策学・福祉社会学がある。社会学、社会福祉、地域、人間形成を関連づけて学び、受験科目は当年度の要項で確認する。'},
+    {name:'奈良大学',url:'https://www.nara-u.ac.jp/about/nyushi/',zh:'收录社会学研究科·社会学专攻·社会文化研究课程 2026 年度秋季专业科目（社会心理学）第 3 问的 6 个词，原题为 6 选 3。2025 年度春季卷为论述题，未标作名词解释；年度按试卷招生年度记录。',ja:'社会学研究科・社会学専攻・社会文化研究コースの2026年度秋季・専門科目（社会心理学）問題3から6語を収録。原問は6語中3語の選択。2025年度春季は論述式のため用語解説の出題例に含めず、年度は問題冊子の入試年度に従う。'}
   ];
   const $ = selector => document.querySelector(selector);
   const escape = value => String(value ?? '').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const normalize = value => String(value).normalize('NFKC').toLowerCase().replace(/\s+/g,' ').trim();
   const safeURL = value => /^https?:\/\//.test(value) ? escape(value) : '#';
   const state = {lang:'zh',category:'all',status:'all',school:'all',year:'all',evidence:'all',query:'',limit:24,recall:false};
-  let papers=[],paperMap=new Map(),terms=[],sources=[],sourceMap=new Map(),termMap=new Map(),filtered=[],flashTerm=null,loadState='loading';
+  let papers=[],paperMap=new Map(),terms=[],sources=[],sourceMap=new Map(),termMap=new Map(),filtered=[],flashTerm=null,loadState='loading',sociologySchools=[];
   let review={saved:new Set(),mastered:new Set()};
   try {
     state.lang=!international&&localStorage.getItem('polyphony-sociology-language')==='ja'?'ja':'zh';
@@ -58,6 +59,30 @@
     try {localStorage.setItem(reviewKey,JSON.stringify({saved:[...review.saved],mastered:[...review.mastered]}));} catch { /* Optional storage. */ }
   }
   function evidenceLabel(kind){return config?.evidenceLabels[kind]||kind;}
+  function sociologyExamLabel(exam){
+    return state.lang==='ja'?(exam.labelJa||exam.label):(exam.labelZh||exam.label);
+  }
+  function matchesSociologyExam(term,exam,parts){
+    return (state.school==='all'||exam.school===state.school)&&(state.year==='all'||String(exam.year)===state.year)&&parts.every(part=>{
+      if(/^(?:19|20)\d{2}(?:年|年度)?$/.test(part))return String(exam.year)===part.replace(/年度?$/,'');
+      const school=sociologySchools.find(name=>normalize(name)===part||normalize(name.replace(/大学$/,''))===part);
+      if(school)return exam.school===school;
+      return (term.search+' '+exam.search).includes(part);
+    });
+  }
+  function sociologyMatches(term,parts){
+    if(state.school==='all'&&state.year==='all'&&parts.every(part=>term.search.includes(part)))return true;
+    return term._exams.some(exam=>matchesSociologyExam(term,exam,parts));
+  }
+  function sociologyExamOptions(){
+    const copy=ui[state.lang];
+    $('#school-filter').innerHTML=`<option value="all">${copy.allSchools}</option>`+sociologySchools.map(school=>`<option value="${escape(school)}">${escape(school)}</option>`).join('');
+    $('#year-filter').innerHTML=`<option value="all">${copy.allYears}</option>`+[...new Set(terms.flatMap(term=>term._exams.map(exam=>exam.year)).filter(Boolean))].sort((a,b)=>b-a).map(year=>`<option value="${escape(year)}">${escape(year)} ${copy.yearSuffix}</option>`).join('');
+    $('#school-filter').value=state.school;
+    $('#year-filter').value=state.year;
+    $('#school-filter').setAttribute('aria-label',copy.schoolLabel);
+    $('#year-filter').setAttribute('aria-label',copy.yearLabel);
+  }
   function examHistory(term){
     if(!international)return '';
     return `<section class="term-exam-history"><h4>考过的学校与年份 <span>${term._exams.length} 条收录记录</span></h4><ul>${term._exams.map(e=>`<li><div><b>${escape(e.school)}</b><span>${escape(e.year)} 年 · ${escape(e.courseCode||'')} ${escape(e.course)}</span></div><p>原题词名：${escape(e.questionTerm)} <span class="evidence-tag">${escape(evidenceLabel(e.evidenceKind))}</span></p><p class="exam-note">${escape(e.evidenceNote)}</p><a href="${safeURL(sourceMap.get(e.source)?.url)}" target="_blank" rel="noopener noreferrer">${escape(sourceMap.get(e.source)?.title)} ↗</a></li>`).join('')}</ul></section>`;
@@ -65,10 +90,14 @@
   function fields(term) {
     const copy=ui[state.lang],lang=state.lang;
     const related=(term.related||[]).map(id=>termMap.get(id)).filter(Boolean);
-    return `<div class="term-content"><p class="term-definition">${escape(term.definition[lang])}</p><dl><dt>${copy.scholar}</dt><dd>${escape(term.scholar[lang])}</dd><dt>${copy.example}</dt><dd>${escape(term.example[lang])}</dd><dt>${copy.distinction}</dt><dd class="term-distinction">${escape(term.distinction[lang])}</dd>${related.length?`<dt>${copy.related}</dt><dd class="term-related">${related.map(t=>`<a href="#term-${escape(t.id)}" data-related="${escape(t.id)}">${escape(t[lang])}</a>`).join('')}</dd>`:''}</dl>${examHistory(term)}<div class="term-source-links">${(term.sources||[]).map(id=>sourceMap.get(id)).filter(Boolean).map(s=>`<a href="${safeURL(s.url)}" target="_blank" rel="noopener noreferrer">${escape(s.title)} ↗</a>`).join('')}${(international?[]:term.exam||[]).map(e=>`<a href="${safeURL(e.url)}" target="_blank" rel="noopener noreferrer">${escape(e.label)} ↗</a>`).join('')}</div></div>`;
+    return `<div class="term-content"><p class="term-definition">${escape(term.definition[lang])}</p><dl><dt>${copy.scholar}</dt><dd>${escape(term.scholar[lang])}</dd><dt>${copy.example}</dt><dd>${escape(term.example[lang])}</dd><dt>${copy.distinction}</dt><dd class="term-distinction">${escape(term.distinction[lang])}</dd>${related.length?`<dt>${copy.related}</dt><dd class="term-related">${related.map(t=>`<a href="#term-${escape(t.id)}" data-related="${escape(t.id)}">${escape(t[lang])}</a>`).join('')}</dd>`:''}</dl>${examHistory(term)}<div class="term-source-links">${(term.sources||[]).map(id=>sourceMap.get(id)).filter(Boolean).map(s=>`<a href="${safeURL(s.url)}" target="_blank" rel="noopener noreferrer">${escape(s.title)} ↗</a>`).join('')}${(international?[]:term.exam||[]).map(e=>`<a href="${safeURL(e.url)}" target="_blank" rel="noopener noreferrer">${escape(sociologyExamLabel(e))} · ${copy.examLink} ↗</a>`).join('')}</div></div>`;
   }
   function examPreview(term){
-    if(!international)return '';
+    if(!international){
+      const parts=normalize(state.query).split(' ').filter(Boolean);
+      const exams=term._exams.filter(exam=>matchesSociologyExam(term,exam,parts));
+      return exams.length?`<p class="term-sociology-exams">${exams.map(exam=>`<span>${escape(sociologyExamLabel(exam))}</span>`).join('')}</p>`:'';
+    }
     const labels=[...new Set(term._exams.map(e=>`${e.school} ${e.year}`))];
     return `<p class="term-exam-preview">${labels.slice(0,3).map(escape).join(' · ')}${labels.length>3?` · 另${labels.length-3}组`:''}</p>`;
   }
@@ -89,7 +118,7 @@
     const focusAction=active?.dataset?.save?{type:'save',id:active.dataset.save}:active?.dataset?.master?{type:'master',id:active.dataset.master}:null;
     const openIDs=new Set([...document.querySelectorAll('.term-card[open]')].map(e=>e.id.slice(5)));
     const parts=normalize(state.query).split(' ').filter(Boolean);
-    filtered=terms.filter(t=>(state.category==='all'||t.category===state.category)&&(!international?parts.every(p=>t.search.includes(p)):t._exams.some(e=>(state.school==='all'||e.school===state.school)&&(state.year==='all'||String(e.year)===state.year)&&(state.evidence==='all'||e.evidenceKind===state.evidence)&&matchesExamQuery(t,e,parts)))&&(state.status==='all'||(state.status==='saved'&&review.saved.has(t.id))||(state.status==='mastered'&&review.mastered.has(t.id))||(state.status==='unmastered'&&!review.mastered.has(t.id))||(state.status==='exam'&&t.exam?.length)));
+    filtered=terms.filter(t=>(state.category==='all'||t.category===state.category)&&(!international?sociologyMatches(t,parts):t._exams.some(e=>(state.school==='all'||e.school===state.school)&&(state.year==='all'||String(e.year)===state.year)&&(state.evidence==='all'||e.evidenceKind===state.evidence)&&matchesExamQuery(t,e,parts)))&&(state.status==='all'||(state.status==='saved'&&review.saved.has(t.id))||(state.status==='mastered'&&review.mastered.has(t.id))||(state.status==='unmastered'&&!review.mastered.has(t.id))||(state.status==='exam'&&t.exam?.length)));
     const visible=filtered.slice(0,state.limit);
     $('#glossary-results').innerHTML=visible.map(t=>card(t,openIDs)).join('');
     $('#result-count').textContent=ui[state.lang].count(filtered.length,visible.length);
@@ -124,6 +153,7 @@
     $('#category-filter').value=state.category;
     $('#status-filter').innerHTML=['all','saved','unmastered','mastered','exam'].map(id=>`<option value="${id}">${copy[id]}</option>`).join('');
     $('#status-filter').value=state.status;
+    if(!international)sociologyExamOptions();
     $('#school-notes').innerHTML=schoolNotes.map(n=>`<section class="glossary-school-card"><h3>${escape(n.name)}</h3><p>${escape(n[state.lang])}</p><a href="${safeURL(n.url)}" target="_blank" rel="noopener noreferrer">${copy.sourceLink}</a></section>`).join('');
     try {if(!international)localStorage.setItem('polyphony-sociology-language',state.lang);} catch { /* Optional storage. */ }
     if(international && papers.length)renderResearchNotes();
@@ -199,10 +229,12 @@
   }
   ['school','year','evidence'].forEach(k=>{$(`#${k}-filter`)?.addEventListener('change',e=>{state[k]=e.target.value;state.limit=24;render();});});
   language(state.lang);
-  fetch(config?.dataURL||'sociology-terms.json?v=20261009').then(response=>{if(!response.ok)throw new Error('Glossary unavailable');return response.json();}).then(data=>{
+  fetch(config?.dataURL||'sociology-terms.json?v=20261017nara').then(response=>{if(!response.ok)throw new Error('Glossary unavailable');return response.json();}).then(data=>{
     loadState='ready';sources=data.sources;sourceMap=new Map(sources.map(s=>[s.id,s]));
     if(international){papers=data.papers;paperMap=new Map(papers.map(p=>[p.id,p]));config.coverage=data.coverage;$('#school-filter').innerHTML='<option value="all">全部学校</option>'+config.schools.map(s=>`<option value="${escape(s)}">${escape(s)}</option>`).join('');$('#year-filter').innerHTML='<option value="all">全部年份</option>'+[...new Set(papers.map(p=>p.year))].sort((a,b)=>b-a).map(y=>`<option value="${y}">${y} 年</option>`).join('');data.terms.forEach(t=>{t._exams=t.occurrences.map(e=>{const p=paperMap.get(e.paperId);return {...p,...e,search:normalize([p.school,p.year,e.questionTerm,p.course,p.courseCode].join(' '))}});t.exam=t._exams.map(e=>({label:`${e.school} ${e.year} · ${evidenceLabel(e.evidenceKind)}`,url:sourceMap.get(e.source).url}));});}
+    if(!international)data.terms.forEach(term=>{term._exams=(term.exam||[]).map(exam=>({...exam,search:normalize([exam.school,exam.year,exam.season,exam.label,exam.labelZh,exam.labelJa,exam.question,exam.questionTerm,exam.course].filter(Boolean).join(' '))}));});
     terms=data.terms.map(t=>({...t,search:normalize([t.zh,t.ja,t.en,t.scholar.zh,t.scholar.ja,...(t.aliases||[]),t.definition.zh,t.definition.ja].join(' '))}));
+    if(!international)sociologySchools=[...new Set(terms.flatMap(term=>term._exams.map(exam=>exam.school)).filter(Boolean))].sort((a,b)=>a.localeCompare(b,'ja'));
     termMap=new Map(terms.map(t=>[t.id,t]));
     $('#total-count').textContent=terms.length;
     $('#category-count').textContent=new Set(terms.map(t=>t.category)).size;

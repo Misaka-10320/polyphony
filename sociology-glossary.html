@@ -11,10 +11,10 @@
   <link rel="stylesheet" href="assets/vendor/lenis.css">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="polish.css?v=5">
-  <link rel="stylesheet" href="sociology-glossary.css?v=20261009">
+  <link rel="stylesheet" href="sociology-glossary.css?v=20261017nara">
   <script src="assets/vendor/lenis.min.js" defer></script>
   <script src="script.js?v=5" defer></script>
-  <script src="sociology-glossary.js?v=20261009d" defer></script>
+  <script src="sociology-glossary.js?v=20261017nara" defer></script>
 </head>
 <body class="glossary-page">
   <a class="skip" href="#main" data-ui="skip">跳至正文</a>
@@ -28,12 +28,13 @@
       <div class="glossary-hero-grid"><h1><span data-ui="title">社会学名词解释</span><span class="glossary-title-note" data-ui="subtitle">把概念，连成理解。</span></h1><div><p class="glossary-description" data-ui="description">面向修士入试与日常学习的中日双语词库。<br>从一句定义出发，接上学者、例子与概念的边界。</p><div class="glossary-stats"><span><b id="total-count">—</b><small data-ui="terms">个词条</small></span><span><b id="category-count">—</b><small data-ui="categories">个领域</small></span><span><b id="mastered-count">0</b><small data-ui="mastered">已掌握</small></span></div><a class="glossary-start" href="#glossary-browser" data-ui="begin">开始查词 ↓</a></div></div>
     </header>
     <section class="glossary-writing" aria-labelledby="answer-title"><div><p class="eyebrow" data-ui="answerKicker">不止记住名字 / 写出解释</p><h2 id="answer-title" data-ui="answerTitle">让答案有一条完整的线。</h2></div><div><ol><li data-ui="answer1">定义：它解释什么现象？</li><li data-ui="answer2">学者：谁在什么论述中使用它？</li><li data-ui="answer3">机制与例子：它怎样运作？</li><li data-ui="answer4">区别：它不等同于哪个邻近概念？</li></ol><p data-ui="answerNote">同志社 2026 年度秋期公开题要求结合学者或著作与具体例。词条是答题提纲，篇幅与论证应按实际题目展开。</p></div></section>
-    <details class="glossary-school-notes"><summary><span data-ui="schoolTitle">目标校与公开资料</span><span aria-hidden="true">＋</span></summary><div class="glossary-school-grid" id="school-notes"></div><p class="glossary-scope" data-ui="scope">覆盖通用基础与地域、文化、福祉等方向；不把某次出现的术语当成固定考纲。标有「公开题例」的词条附具体题目链接。</p></details>
+    <details class="glossary-school-notes"><summary><span data-ui="schoolTitle">目标校与公开资料</span><span aria-hidden="true">＋</span></summary><div class="glossary-school-grid" id="school-notes"></div><p class="glossary-scope" data-ui="scope">覆盖通用基础与地域、文化、福祉等方向；不把某次出现的术语当成固定考纲。标有「公开题例」的词条附具体题目链接；年度依试卷的招生年度标记。</p></details>
     <section id="glossary-browser" class="glossary-browser" aria-labelledby="browser-title">
       <h2 id="browser-title" class="sr-only" data-ui="browserTitle">查词与复习</h2>
       <div class="glossary-controls">
-        <div class="glossary-search-row"><div class="glossary-search"><span aria-hidden="true">⌕</span><input type="search" id="term-search" autocomplete="off" placeholder="搜索中文、日文、英文或学者" aria-label="搜索词条"><button type="button" id="clear-search" hidden data-ui="clear">清空</button></div><button type="button" id="random-term" class="glossary-random" disabled data-ui="random">抽一词 ↗</button></div>
+        <div class="glossary-search-row"><div class="glossary-search"><span aria-hidden="true">⌕</span><input type="search" id="term-search" autocomplete="off" placeholder="搜索概念、学者、学校或年度" aria-label="搜索词条"><button type="button" id="clear-search" hidden data-ui="clear">清空</button></div><button type="button" id="random-term" class="glossary-random" disabled data-ui="random">抽一词 ↗</button></div>
         <div class="glossary-filter-row"><div class="glossary-category-filter"><label for="category-filter" data-ui="categoryLabel">领域</label><select id="category-filter"><option value="all">全部领域</option></select></div><div class="glossary-status-filter"><label for="status-filter" data-ui="statusLabel">范围</label><select id="status-filter"><option value="all">全部词条</option><option value="saved">已收藏</option><option value="unmastered">待复习</option><option value="mastered">已掌握</option><option value="exam">公开题例</option></select></div><button type="button" id="recall-mode" aria-pressed="false" data-ui="recall">背诵模式</button></div>
+        <div class="glossary-filter-row glossary-exam-filters"><div><label for="school-filter" data-ui="schoolLabel">出题学校</label><select id="school-filter"><option value="all">全部学校</option></select></div><div><label for="year-filter" data-ui="yearLabel">招生年度</label><select id="year-filter"><option value="all">全部年度</option></select></div></div>
       </div>
       <div class="glossary-result-line"><p id="result-count" role="status" aria-live="polite">正在载入词库…</p><p id="mode-description" data-ui="readNote">展开词条，查看完整解释。</p></div>
       <div id="glossary-results" class="glossary-results"></div>
